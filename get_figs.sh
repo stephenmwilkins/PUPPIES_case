@@ -15,14 +15,14 @@ cp ../analysis/survey_comparison/figs/F200W.pdf figs/
 #
 # --- LF models
 cp ../analysis/LF/figs/CN_surveys.pdf figs/
+cp ../analysis/LF/figs/CN_models.pdf figs/
+cp ../analysis/LF/figs/LF_evo.pdf figs/
+
 #
 # # --- LF models
 # cp ../analysis/CV/figs/CV.pdf figs/
 #
-# # --- LF constraints
-# cp ../analysis/LF/figs/LF_10_combined.pdf figs/
-# # cp ../analysis/LF/figs/LF_11.pdf figs/
-# cp ../analysis/LF/figs/fitLF_alpha_phi.pdf figs/
+
 #
 #
 # --- colours
@@ -32,8 +32,8 @@ cp ../analysis/beta/figs/C_beta_MTOL.pdf figs/
 
 
 #
-# # --- SED
-# cp ../analysis/SED/figs/SED.pdf figs/
+# --- SED
+cp ../analysis/SED/figs/SED.pdf figs/
 #
 # --- Parallel opportunities
 cp ../analysis/apt_analysis/figs/time_background.pdf figs/
