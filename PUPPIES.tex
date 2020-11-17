@@ -115,11 +115,30 @@ While focused on the distant Universe WAFLS will provide an invaluable immediate
 
 \subsection*{Constraints on the UV Luminosity Function Across the Epoch of Reionisation and Beyond}\label{sec:UVLF}
 
+
+
+% THIS TEXT IS TAKEN FROM ANOTHER PROPOSAL IN PREP - IT SHARES SOME COIs SO I FEEL ITS FINE AS A REFERENCE
+
+% The first 500 Myr of galaxy evolution (z>10) was a transformative period in our Universe, as the first galaxies began to coalesce, enriching and ionizing their environments, forever altering the course of subsequent gas accretion and star formation. While deep and wide surveys with HST (e.g., HUDF [PI Illingworth], CANDELS [PIs Faber & Ferguson], Hubble Frontier Fields [PI Lotz]) led to the discovery of ∼1000 galaxy candidates at 6< z <8, Hubble has only scratched the surface at z>9, with just a handful of z ∼9–11 tenuous (e.g., <10σ significance in 1–2 imaging bands) candidates [27, 4]. Pushing HST’s limits has led to a tension in published observational results. While there is agreement that the observable (MUV < −17) cosmic SFR density smoothly declines from z = 4 to 8 [e.g., 14, 6], some [e.g., 27] find evidence for an accelerated decline at z > 8, while others [e.g., 25, 12] find evidence for a continued smooth decline to earlier times. The absence of robust observational constraints leaves theoretical models completely unconstrained at z >9 (Figure 2), where differences in their physical star-formation and feedback prescriptions result in a wide range of predictions for the abundance of galaxies during this epoch. This leads to enormous uncertainty on plausible timelines for the reionization of the intergalactic medium (IGM), where models which follow the steep SFR density evolution are consistent with a slow beginning and rapid completetion, while those which follow the shallow SFR evolution find an earlier beginning and more smooth evolution of the reionization process [e.g. 31, 15].
+% Robust observational constraints are needed to distinguish between these competing models. This is possible with JWST/NIRCam as its sensitivity over 1 − 5μm allows the measurement of at least two colors over 8 < z < 20, and was designed to go deep, hunting these first galaxies. However, the planned public Early Release Science programs fall short of what is needed to detect these objects. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 The observed luminosity function of galaxies encodes both the  detailed physics of star formation in addition to the effect of dust attenuation. From a theory perspective both of these are sufficiently uncertain, particularly in the early Universe, that different modelling approaches, despite yielding similar results at low-redshift, diverge at high-redshift. This is demonstrated in Figure \ref{fig:CN_models} where we show the expected cumulative number of galaxies expected in WAFLS for a range of models. This wide variation demonstrates that the study of galaxies during this epoch has potential to inform our understanding of galaxy formation and evolution in the early Universe.
 
 \begin{SCfigure}
-    \includegraphics[width=0.6\textwidth]{figs/CN_models_WAFLS.pdf}
-      \caption{\protect\rule{0ex}{5ex} The cumulative number of sources predicted to observeable by WAFLS by a range of models. These include empirical extrapolations (Finkelstein+2016), semi-empirical models (Mason+2015, Williams+2018), semi-analytical models (Yung+2018), and hydrodynamical simulations (Wilkins+2017; Ma+2019; Vijayan+2020).}
+    \includegraphics[width=0.6\textwidth]{figs/CN_surveys.pdf}
+      \caption{\protect\rule{0ex}{5ex} The cumulative number of sources predicted to observeable to CEERS, PUPPIES, and JADES.}
       \vspace{-10mm}
 \end{SCfigure}
 
@@ -129,25 +148,71 @@ The observed luminosity function of galaxies encodes both the  detailed physics 
 
 While the planned GTO/ERS programmes will begin the process of obtaining stronger constraints at $z>9$ the relatively small areas probed by these programs limits the number of bright galaxies. This limits our ability to constrain the bright-end of the LF, critical to characterise its overall shape. Compounding the small number of sources is the fact that these programmes, as predominantly contiguous surveys, will suffer from cosmic variance increasing the uncertainty on the number of galaxies by $\approx 1.5-2\times$ compared to the statistical uncertainty alone\cite{2020MNRAS.499.2401T}\cite{2020MNRAS.496..754B}\cite{2008ApJ...676..767T}. 
 
-\begin{SCfigure}
-    \includegraphics[width=0.6\textwidth]{figs/CV.pdf}
-      \caption{\protect\rule{0ex}{5ex} The predicted number of sources at $9<z<10$ as a function of F277W in CEERS, JADES, and WAFLS. The upper-panel shows the total variance $\sigma^2$ compared to the expected statistical variance $N$. This demonstrates that WAFLS suffers from minimal cosmic variance while both JADES and CEERS suffer a factor of $2-4$ larger variance than naively expected for the given number of galaxies.}
-      \label{fig:CV}
-      \vspace{-5mm}
-\end{SCfigure}
+% \begin{SCfigure}
+%     \includegraphics[width=0.6\textwidth]{figs/CV.pdf}
+%       \caption{\protect\rule{0ex}{5ex} The predicted number of sources at $9<z<10$ as a function of F277W in CEERS, JADES, and WAFLS. The upper-panel shows the total variance $\sigma^2$ compared to the expected statistical variance $N$. This demonstrates that WAFLS suffers from minimal cosmic variance while both JADES and CEERS suffer a factor of $2-4$ larger variance than naively expected for the given number of galaxies.}
+%       \label{fig:CV}
+%       \vspace{-5mm}
+% \end{SCfigure}
 
 The wide area and pure parallel nature of WAFLS overcomes these issues. The WAFLS strategy is tuned to probe $M^{\star}$ ($M_{1500}=-20\ -\ 21$) galaxies at $9<z<11$ yielding roughly uniform number of galaxies per mag at F277W$27.5-29.5$ ($-21<M_{1500}<-18$) when combined with JADES and CEERS. Figure \ref{fig:CV} shows both the predicted number of sources and the total variance compared to the expected statistical variance for WAFLS, CEERS, and JADES. WAFLS yields not only $3\times$ as many galaxies as JADES+CEERS at F277W$<28.25$ but the resulting total uncertainty is virtually cosmic variance mitigated resulting in an even stronger gain. In Figure \ref{fig:LF} we show the resulting constraints on the $9.5<z<10.5$ LF from CEERS+JADES both with and without WAFLS. This highlights the strong improvement, particularly at $-21<M_{1500}<-20$ where $M^{\star}$ is expected to lie. The addition of WAFLS provides roughly uniform sampling of the LF over and reduces the uncertainty on both the parameters by around a factor of $2-3$. As shown in the right-hand panel WAFLS, when combined with CEERS and JADES, is able to discriminate between many current models. 
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{figs/LF_10_combined.pdf}
-    \includegraphics[width=0.45\textwidth]{figs/fitLF_alpha_phi.pdf}
-    \vspace{-5mm}
-    \caption{Expected constraints on the $9.5<z<10.5$ luminosity function, assuming the Mason+2015 model, for WAFLS, CEERS, and JADES. Uncertainties are corrected for the effects of cosmic variance. Sources are included if they are brighter than the 10$\sigma$ point-source limit. The right hand panel shows the joint constraints on the faint-end slope $\alpha$ and the number density at $M_{1500}=-20.5$ both using WAFLS and without WAFLS (JADES+CEERS). The right hand panel also shows various empirical and model predictions.}
-    \label{fig:LF}
-\end{figure}
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{figs/LF_10_combined.pdf}
+%     \includegraphics[width=0.45\textwidth]{figs/fitLF_alpha_phi.pdf}
+%     \vspace{-5mm}
+%     \caption{Expected constraints on the $9.5<z<10.5$ luminosity function, assuming the Mason+2015 model, for WAFLS, CEERS, and JADES. Uncertainties are corrected for the effects of cosmic variance. Sources are included if they are brighter than the 10$\sigma$ point-source limit. The right hand panel shows the joint constraints on the faint-end slope $\alpha$ and the number density at $M_{1500}=-20.5$ both using WAFLS and without WAFLS (JADES+CEERS). The right hand panel also shows various empirical and model predictions.}
+%     \label{fig:LF}
+% \end{figure}
 
 \subsection*{The Physical Properties of Galaxies in the EoR}\label{sec:properties}
+
+
+
+
+% THIS TEXT IS TAKEN FROM ANOTHER PROPOSAL IN PREP - IT SHARES SOME COIs SO I FEEL ITS FINE AS A REFERENCE
+
+% 1.1: Physical Processes Regulating the Emergence of the First Galaxies
+% The shape of the rest-frame UV luminosity function constrains the relative importance of the physical processes governing the conversion of gas into stars. These processes depends on numerous factors, including density, metallicity, magnetic field strength, turbulence, and a variety of feedback mechanisms. At the highest redshifts we have almost no empirical constraints on these processes, though theoretical predictions for galaxies in this era are beginning to emerge [e.g., 24, 16, 35, 39, 2]. However, these models use different prescriptions for the physics regulating the conversion of gas into stars, resulting in a wide range of predicted z > 10 luminosity functions. For example, Behroozi et al. [2] adopt an ansatz that galaxy specific SFRs (SFR per unit stellar mass) follow their halo’s specific mass accretion rate, reproducing the observed SFR density evolution at z <8. When extrapolated to even earlier times, it predicts a relatively shallow evolution at 8 < z < 15, with very bullish predictions for JWST surveys.
+% Models that attempt to include the detailed physics of molecule formation, star forma- tion, and stellar feedback generally make more bearish predictions [e.g., 16, 35, 39], though their predictions differ dramatically at extreme redshifts (z > 8).
+% Figure 2 shows the predicted UV luminosity functions from these models at z = 10 (top-
+% middle) and z = 12 (top-right). At z =10 there are noticeable differences in the normalization (∆φ∗ ∼ 1 dex) and faint-end slope (∆α ∼ 0.5). This becomes even more evident at z = 12, where the models span ≥ 1 dex across all luminosities, leading to >∼2 dex variations in the normalization φ∗ and nearly 1 dex in the faint-end slope α. We show predictions for the constraints achievable with WDEEP (see Technical Justification for details), which begin to distinguish between these models at MUV = −17.5 (the ∼10σ limit at z =10).
+% Why is there such disagreement in these models? As cosmological simulations can-
+% not come close to resolving the formation of individual stars, they must assume many key
+% physical relationships. Two in particular regulate the shape and normalization of the UV
+% luminosity function at high redshift: the star-formation law (or star formation efficiency
+% as a function of cold gas surface density), and the prescription for stellar feedback. Yung
+% et al. [39] explored these physical processes using a semi-analytic model (SAM), exploring
+% how modifications to these relationships altered the UV luminosity function, shown in the
+% bottom panel of Figure 2. The purple shading shows the difference in luminosity func-
+% tion predictions between assuming a linear relationship between molecular gas density and  ̇
+% that SFRD scales as molecular gas density squared Σ∗ ∝ (ΣH2 )2 above a critical H2 surface density (upper envelope). These changes result in strong differences in the bright-end of the ̇UV luminosity function, where medium-depth wide-field programs such as CEERS will place constraints, but little change in the faint-end.
+
+% However, Yung et al. [39] found that stellar feedback strongly influences star formation in low-mass halos, with significant changes in the predicted abundances of faint galaxies. They parameterized this with a stellar feedback relation slope (αrh) which characterizes the dependence of the mass loading factor of cold gas ejected by stellar feedback on the halo circular velocity. Yung et al. [39] found that changing αrh can change the number density of the lowest-mass observable galaxies (∼108M⊙; MUV ∼ −18 at z = 10) by up to 1 dex. The red shaded region in Figure 2 illustrates the range of luminosity function predictions from Yung et al. [39] when changing αrh = 2.0 (top) to 3.6 (bottom). The data points show the precision on the luminosity function measured by CEERS (green) and WDEEP (blue) for Yung et al’s fiducial model (αrh = 2.4). Our predicted WDEEP constraints have uncertainties which are ∼7× smaller than this range in models.
+% By robustly identifying galaxies to m > 30, WDEEP will provide the first meaningful constraints on the stellar feedback physics in extremely early galaxies. Constraining the luminosity function to this precision will allow a robust determination of the observed SFR density to z = 12, distinguishing between the wide range of models shown in Figure 2. Finally, by constraining whether the SFR density evolves shallowly or steeply, WDEEP will provide significant constraints on models of reionization.
+
+% As we discover galaxies closer and closer
+% to the Big Bang, we will eventually wit-
+% ness the periods during which galaxies
+% have formed no more than a few gen-
+% erations of stars, characterized by ex-
+% tremely low metallicities. While pre-
+% vious generations of simulations im-
+% plied that discovering entire pockets
+% of metal-free star-formation was possi-
+% ble [so-called “Population III” galaxies;
+% e.g. 32], more recent simulations pre-
+% dict that Pop III star formation in early
+% mini-halos at z ∼ 15–20 was likely very
+% efficient at polluting the IGM with met-
+% als, and so we might never expect to see
+% metal-free star formation [e.g., 18, 17].
+% The consequences for subsequent star-
+% formation are critical — if all dense gas
+% in the universe is rapidly enriched beyond the critical metallicity (Z ∼ 10−4 Z⊙), both the stellar initial mass function and stellar photospheric temperatures will likely not be dramat- ically different than that seen in low-metallicity environments in the early universe. If the opposite is true, and fairly massive metal-free stars can form down to even z ∼ 10, it will provide a distinct boost in the typical hardness of stellar spectra, with consequences on the ability of stellar light to reionize the IGM.
+% Constraints on the typical metallicities of early galaxies are thus of intense interest. A straightforward measure of the physical properties of the stars is available via the UV spectral slope β; fλ ∝ λβ [9], which can be measured via broadband colors, with β < −3 a typical threshold for near-metal-free stellar populations. Observations with HST at z < 10 found no strong evidence for β < −2.5, thus the presently observable galaxies are consistent with somewhat low, but non-zero, metallicities, without much dust obscuration in the lowest mass galaxies [13, 10, 5, 34]. Our proposed NIRCam observations will measure four (three) rest-UV colors for galaxies at z ∼ 10 (12), allowing us to constrain the nature of their stellar populations. Simulations at our proposed depths show that with these multiple colors we can recover β with minimal bias and σβ = 0.2 to z > 13. Finally, our observations will improve measures of galaxies at z = 6–8, currently restricted to just one or two colors, measuring β with five colors.
+
 
 \begin{SCfigure}
     \includegraphics[width=0.6\textwidth]{figs/SED.pdf}
@@ -176,9 +241,8 @@ The morphologies and sizes of galaxies encode information about their structural
 
 
 
-\subsection*{Galaxies across cosmic history}
+\subsection*{Legacy science}
 
-By combining the NIR imaging obtained with WAFLS with optical imaging from other observatories it is possible to obtain accurate photometric redshifts of galaxies across the entire history of the Universe. The NIR imaging obtained by WAFLS will allow the measurement of galaxy stellar masses and thus the galaxy stellar mass function extending down to $M_{\star}\sim 10^{8}\,{\rm M_{\odot}}$ at $z=2$. 
 
 
 
@@ -190,36 +254,32 @@ By combining the NIR imaging obtained with WAFLS with optical imaging from other
 %       (see https://jwst-docs.stsci.edu/jwst-opportunities-and-policies/jwst-call-for-proposals-for-cycle-1/jwst-cycle-1-proposal-preparation)
 %
 %
+
+\clearpage
+
 \justifyobservations   % Do not delete this command.
 % Enter your description of the observations.
 
-
-To define the WAFLS programme we can translate our scientific objectives into a series of technical requirements:
-
-\begin{itemize}
-
-\item The \emph{robust} identification of galaxies at $9<z<11$ requires that we obtain imaging in at least 6 filters: {\bf F115W}, {\bf F150W}, {\bf F200W}, {\bf F277W}, {\bf F356W}, and {\bf F444W}. While it is possible to use 3 filters to select $9<z<11$ galaxies using a simple colour-colour technique such selection are susceptible to contamination. The left panel of Figure \ref{fig:pz} shows the simulated photometric redshift accuracy and precision for our strategy demonstrating the recovery of both sufficiently accurate and precise photometric redshifts to achieve our science objectives.
-
-\item $M^{\star}$ at $z=10$ is predicted to lie at $-20.4$ - $-21.2$ corresponding to F200W$=26.5-27.3$. To ensure a robust detection of galaxies around $L^{\star}$ we require a $10\sigma$ point-source depth of $27.3$ corresponding to a $5\sigma$ depth of F277W$\approx 28$. While both current observational constraints and theoretical predictions are uncertain they both suggest that $1000-1500\ {\rm arcmin^2}$ will yield statistically useful numbers of galaxies across this magnitude range. This combination of area and depth complements the planned JADES survey extending the range over which there are statistically useful numbers of galaxies by $\approx 1$ mag.
-
-\item The consistent measurement of the rest-frame UV continuum over $9<z<11$ requires at least 3 filters spanning the rest-frame UV continuum at $9<z<11$. The combination of {\bf F150W}, {\bf F200W}, {\bf F277W}, and {\bf F356W} makes this possible as shown in Figure \ref{fig:SED}. Measurement of stellar masses and specific star formation rates also requires the inclusion of {\bf F444W} to break the dust/sSFR degeneracy with $\beta$.
-
-\item Identifying quiescent galaxies across $3<z<6$ requires 6 filters: {\bf F115W}, {\bf F150W}, {\bf F200W}, {\bf F277W}, {\bf F356W}, and {\bf F444W} as demonstrated in the right panel of Figure \ref{fig:pz}. As quiescent galaxies are rare and relatively bright the identification of large numbers is possible through relatively shallow wide area observations. 
-
-\end{itemize}
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figs/dz_WAFLS_const.pdf}
-    \includegraphics[width=0.45\textwidth]{figs/dz_WAFLS_inst.pdf}
-    \caption{The photometric redshift accuracy and precision expected for star forming galaxies at $8<z<13$ (left) and quiescent galaxies at $3<z<6$ (right): while a 6 filter strategy is capable of providing both accurate and precise photometric redshifts a 4 filter strategy incapable of discriminating quiescent galaxies from (more numerous) lower-redshift sources.}
-    \label{fig:pz}
-\end{figure}
 \noindent
-Combined, these requirements lead us to adopt NIRCam imaging in 6 filters: {\bf F115W}, {\bf F150W}, {\bf F200W}, {\bf F277W}, {\bf F356W}, and {\bf F444W} reaching F277W$\approx 28$ over $\approx 1000-1500\ {\rm arcmin^2}$, corresponding approximately to 150 independent NIRCam pointings. These requirements allow us to define a baseline strategy consisting of a single tier of observations. Assuming a (long-wavelength) aperture of $0.16$" and background at the benchmark level of the Minzodi location a $5\sigma$ point-source depth of F277W$\approx 28$ can be achieved with total exposure times of approximately $1$ks. 
+\underline{\bf Filter choice:} Simulations show that the combination of 3 filter pairs: {\bf F115W}, {\bf F150W}, {\bf F200W}, {\bf F277W}, {\bf F356W}, and {\bf F444W} is the optimum choice for \emph{robustly} identifying $z>9$ star forming galaxies. 2 pairs can in principle be used to detect galaxies $9<z<11$ however the contamination rate is higher and the accuracy/precision at $z>11$ drops significantly. 2 pairs also limits the extent to which the UV continuum slope $\beta$ can be measured \emph{consistently} across redshifts. Adding {\bf F090W} has little effect on the the reliability of the redshifts of galaxies at $z>9$ though does extend the redshift range down to $z\sim 7$ providing increased legacy science. While noting that 3 filter pair strategy best matches our scientific objectives these can be partially met or even \emph{exceeded} using a 2 or 4 pair strategy respectively. To keep PUPPIES as flexible as possible we can also make use of opportunities better suited to a 2 or 4 pair strategy though note a preference those opportunities amenable to our default scenario.
+
+\todo{Photometric redshift tests}
 
 \noindent
-\textbf{Survey Strategy} Because the expected number of sources declines sharply with increasing flux it is possible to extend the magnitude range over which we can obtain statistically useful numbers of galaxies by adopting a tiered strategy combining visits with varying depths. Such a strategy also better reflects the available parallel observing opportunities which will cover a range of durations. With this is mind we define 3 tiers: shallow, medium, and deep with the medium tier chosen to align with our baseline visit while the shallow (deep) tiers utilise $1/2\times$ ($2\times$) total exposure time. The resulting depths in each filter and tier are: 
+\underline{\bf Parallel opportunities:} PUPPIES is an opportunity led program: we are interested in obtaining deep NIRCam imaging in 10-20 independent pointings. Compared to a contiguous survey 10-20 independent sight-lines should reduce the cosmic variance (not total variance) by around $3-5$.
+
+\noindent
+To determine the type of opportunities that are available we use the public GTO and ERS APTs and filter out all observations already with attached coordinated parallels, with the \texttt{NoParallel} flag set, and those of targets with high-background ($>0.3\ $). For each target we then sum the science duration of all observations using the same instrument to obtain an approximate total science duration available to each valid target. The resulting predicted distribution of opportunities with science durations $t_{\rm SD}>10^{4}$ s is then shown in Figure \ref{fig:time_background}. This analysis suggests $\sim 50$ opportunities with $t_{\rm SD}>10^{4}$ s; assuming this distribution is representative of the final Cycle 1 observation suggests there should be $100-150$ useful opportunities.
+
+\begin{SCfigure}
+    \includegraphics[width=0.6\textwidth]{figs/time_background.pdf}
+      \caption{\protect\rule{0ex}{10ex} The predicted distribution of science durations $t_{\rm SD}$ and backgrounds for pure parallel observing opportunities based on the existing GTO and ERS programs. The vertical bands denote the 3 tiers used to define our fiducial survey while the horizontal lines denote the $2\mu$m \texttt{minzodi} benchmark background and the minimum background in several deep extragalactic fields. The top panel shows the resulting cumulative distribution of opportunities as well as an extrapolation to the full cycle 1 observations.}
+      \label{fig:time_background}
+\end{SCfigure}
+
+\noindent
+\underline{\bf Fiducial programme:}
+Armed with this predicted we define a fiducial programme consisting of three tiers - ABC - assuming 4, 3, and 2 \texttt{deep8} 10 group exposures respectively. Reflecting the greater availability of shorter duration opportunities we choose, for this fiducial programme, to obtain 3, 5, and 10 pointings for the A, B, and C tiers respectively. The resulting area and depths achieved in each tier are summarised below. \textbf{The total exposure time as reported by the APT for the combination of the 3 tiers is 79.3 hours}.
 
 \begin{table}[h!]
 \begin{center}
@@ -229,108 +289,33 @@ Combined, these requirements lead us to adopt NIRCam imaging in 6 filters: {\bf 
  \hline
 Tier & $N_{p}$ & Area$/{\rm arcmin^2}$ & F115W & F150W & F200W & F277W & F356W & F444W \\
 \hline
-deep & 35 & 318 & 28.42 & 28.60 & 28.77 & 28.33 & 28.38 & 28.10 \\
-medium & 70 & 637 & 28.10 & 28.29 & 28.46 & 28.03 & 28.09 & 27.81 \\
-shallow & 35 & 318 & 27.65 & 27.84 & 28.01 & 27.66 & 27.71 & 27.46 \\
+A & 3 & 27 & 29.19 & 29.37 & 29.54 & 29.09 & 29.15 & 28.86 \\
+B & 5 & 45 & 29.03 & 29.22 & 29.38 & 28.94 & 28.99 & 28.70 \\
+C & 10 & 91 & 28.81 & 28.99 & 29.16 & 28.71 & 28.77 & 28.48 \\
 \hline
 \end{tabular}
 \end{center}
 \vspace{-5mm}
-\caption{The, number of pointings $N_p$, area, and 5$\sigma$ point source depths in each filter for our 3 tiers for our fiducial survey.  Depths assume a short-wavelength (long-wavelength) apertures of $0.08$" ($0.16$"), background at the benchmark level of the Minzodi location as defined by \texttt{Pandeia}, and a single exposure of 10 groups assuming the \texttt{DEEP8}, \texttt{MEDIUM8}, and \texttt{SHALLOW4} readout modes for the deep, medium, and shallow tiers respectively. Alternative strategies are discussed below.}
+\caption{The number of pointings $N_p$, area, and 5$\sigma$ point source depths in each filter for our 3 tiers for our fiducial survey.  Depths assume a short-wavelength (long-wavelength) apertures of $0.08$" ($0.16$"), background at the benchmark level of the \texttt{Minzodi} location as defined by \texttt{Pandeia}. The ABC tiers assume 4, 3, 2 exposures of 10 groups assuming the \texttt{DEEP8} readout mode respectively.}
 \end{table}
 
-To inform how a fixed amount of charged time should be distributed across these tier in Figure \ref{fig:strategy} we show the expected number of $9<z<11$ star forming and $z=3-5$ quiescent galaxies for a range of scenarios. This reveals that the number of $9<z<11$ sources is maximised for an exclusively deep survey. However, this strategy yields both the fewest \emph{bright} $9<z<11$ and quiescent galaxies. Conversely, while strategies omitting deep pointings yield the largest number of quiescent and bright galaxies they probe a narrower range of luminosities and yield the fewest $9<z<11$ galaxies overall. Distributing time across 3 tiers yields a good compromise. A strategy placing 50\% of pointings in the middle tier and the remainder split between deep and shallow tiers yields the next largest number of $9<z<11$ galaxies while also proving enough bright, and quiescent sources. However, we note that for a fixed charged time the numbers of both $9<z<11$ star forming and $3<z<5$ quiescent galaxies are not strongly sensitive to the choice of strategy outside the extremes (i.e. placing all the time in either the shallow or deep tiers). As such WAFLS can flexibly use a wide range of available opportunities.
-
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{figs/N_configurations.pdf}
-    \includegraphics[width=0.416\textwidth]{figs/N_quiescent_configurations.pdf}
-    \caption{The expected number of $9<z<11$ star forming galaxies assuming the Mason+ model (left) and $z=3-5$ quiescent galaxies assuming the Santini+ observations (right) assuming different strategies but the same total charged time.}
-    \label{fig:strategy}
-\end{figure}
+\noindent
+\underline{\bf Preferred distribution:} We would preferentially go deeper while keeping at least 10 independent sight-lines. 
 
 
 \noindent
-\textbf{Fiducial Program} For our fiducial program we choose to observe 135 pointings with 35, 70, and 35 in the shallow, medium, and deep tier respectively for a total area of $\approx 1250\ {\rm arcmin}^2$. 
-The APT reports that the total science duration (charged) time associated with the 3 tiers are approximately $0.5$ks ($1.0$ks), $1$ks ($1.6$ks), and $2$ks ($2.7$ks) for each filter pair. Our total fiducial programme including 3 filters pairs and 135 pointings then accounts to a total science duration and charged time of 136 and 206 hours respectively. 
-
-\noindent
-\textbf{Parallel Observing Opportunities} While our strategy is driven by our science objectives it is also well aligned with the expected availability of suitable parallel observing opportunities. The first panel of Fig. \ref{fig:apt} shows the science duration time distribution of ERS and GTO targets ignoring those with NIRCam as prime, with existing coordinated parallels, with the \texttt{NoParallel} flag set,  and with a background at $2\mu$m of $<0.3\ {\rm MJy/Sr}$. This distribution is approximately log-normal peaking close to our medium tier. Assuming this is representative of the wider Cycle 1 observations the second panel shows the anticipated cumulative distribution of targets alongside WAFLS. The third panel shows the distribution of $2\mu$m background values of potential WAFLS targets compared to existing deep fields: this demonstrates that many of these targets have backgrounds similar to existing deep fields with the majority having a background less than that used for our fiducial depth estimates.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.32\textwidth]{figs/apt_analysis.pdf}
-    \includegraphics[width=0.32\textwidth]{figs/cumulative.pdf}
-    \includegraphics[width=0.32\textwidth]{figs/background.pdf}
-    \caption{\textit{Left-panel}: the distribution of GTO and ERS target science durations as documented in the public APT files. For each target a the total science duration is calculated by summing the durations of individual observations using the same instrument (ignoring NIRCam) without existing coordinated parallels. Only targets with minimum backgrounds at $2\mu$m of $<0.3\ {\rm MJy/Sr}$ are included. The three WAFLS tiers and the range of science durations useful to WAFLS are denoted by the red lines and shaded region respectively. \textit{Middle-panel}: the cumulative distribution of target science durations for the existing GTO and ERS programmes (blue histogram), a log-normal fit to this distribution (grey line), a scaled prediction for the full set of Cycle 1 observations (black curve), and WAFLS (red line). \textit{Right-panel}: the distribution of $2\mu$m minimum backgrounds of the targets with $<0.3\ {\rm MJy/Sr}$ compared to existing deep fields.}
-    \label{fig:apt}
-\end{figure}
-
-\noindent
-\textbf{Synergy with existing and planned surveys} WAFLS will, partly through the expected availability of suitable parallel observing opportunities and partly through the primary scientific objectives, naturally complement planned programmes on \emph{Webb}, specifically CEERS and JADES. A comparison of the F150W, F200W, and F356W $5\sigma$ point-source depths and areas expected by WAFLS, CEERS, and JADES are shown in Figure \ref{fig:depth}. Figure \ref{fig:depth} also demonstrates the dramatic improvement of WAFLS over existing Hubble and Spitzer surveys. Compared to programmes reaching (surveying) a similar depth (area) on Hubble, WAFLS probes an approximately 10$\times$ larger area (1 magnitude deeper). There are no Spitzer surveys reaching a comparable depth in F356W/F444W with WAFLS reaching 2 magnitudes deeper than similar area surveys. By focusing on the $z>9$ Universe WAFLS will also complement the upcoming Euclid satellite which will be limited to $z\approx 8$.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.3\textwidth]{figs/F150W.pdf}
-    \includegraphics[width=0.3\textwidth]{figs/F200W.pdf}
-    \includegraphics[width=0.3\textwidth]{figs/F356W.pdf}
-    \caption{The cumulative area probed by WAFLS, JADES, CEERS, and existing \emph{Hubble} and \emph{Spitzer} surveys as a function of the H/F150W-band, F200W, and $3.6\mu$m/F356W (right) depths. \todo{Which is better?}}
-    \label{fig:depth}
-\end{figure}
-
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figs/F150W.pdf}
-    \includegraphics[width=0.45\textwidth]{figs/F356W.pdf}
-    \caption{The cumulative area probed by WAFLS, JADES, CEERS, and existing \emph{Hubble} and \emph{Spitzer} surveys as a function of the H/F150W-band, F200W, and $3.6\mu$m/F356W (right) depths. \todo{Which is better?}}
-    \label{fig:depth}
-\end{figure}
-
+\underline{\bf Synergy with existing and planned surveys} PUPPIES will, partly through the expected availability of suitable parallel observing opportunities and partly through the primary scientific objectives, naturally complement planned programmes on \emph{Webb}, specifically CEERS and JADES. A comparison of the F150W, F200W, and F356W $5\sigma$ point-source depths and areas expected by WAFLS, CEERS, and JADES are shown in Figure \ref{fig:depth}. Figure \ref{fig:depth} also demonstrates the dramatic improvement of WAFLS over existing Hubble and Spitzer surveys. Compared to programmes reaching (surveying) a similar depth (area) on Hubble, WAFLS probes an approximately 10$\times$ larger area (1 magnitude deeper). There are no Spitzer surveys reaching a comparable depth in F356W/F444W with WAFLS reaching 2 magnitudes deeper than similar area surveys. By focusing on the $z>9$ Universe WAFLS will also complement the upcoming Euclid satellite which will be limited to $z\approx 8$. \todo{Needs updating}
 
 \begin{SCfigure}
-    \includegraphics[width=0.6\textwidth]{figs/F150W.pdf}
-      \caption{\protect\rule{0ex}{5ex} TThe cumulative area probed by WAFLS, JADES, CEERS, and existing \emph{Hubble} and \emph{Spitzer} surveys as a function of the H/F150W-band, F200W, and $3.6\mu$m/F356W (right) depths. \todo{Which is better?}}
+    \includegraphics[width=0.6\textwidth]{figs/F200W.pdf}
+      \caption{\protect\rule{0ex}{5ex} The cumulative area probed by WAFLS, JADES, CEERS, and existing \emph{Hubble} and \emph{Spitzer} surveys as a function of the H/F150W-band, F200W, and $3.6\mu$m/F356W (right) depths. \todo{Which is better?}}
       \label{fig:depth}
 \end{SCfigure}
 
 
 \noindent
-\textbf{Additional constraints} When selecting potential parallel slots we will not only consider potential science duration and background but also the availability of ancillary observations and accessibility to other facilities (e.g. ALMA).
+\underline{\bf Additional constraints} When selecting potential parallel slots we will not only consider potential science duration and background but also the availability of ancillary observations and accessibility to other facilities (e.g. ALMA).
 
-\noindent
-\textbf{Alternative Filter Combination Strategies} While all our science objectives can only be fulfilled with all 6 filters a simpler survey utilising only F115W/F150W/F277W/F356W can be used to select $9<z<11$ galaxies and thus constrain the luminosity function, albeit with higher contamination and larger photometric redshift uncertainties. However, such a strategy may be employed particularly for shorter opportunities.
-
-\noindent
-\textbf{Alternative read-out mode/$N_{\rm groups}$/$N_{\rm exp}$ strategies} Our fiducial programme assumes both a single exposure for each filter pair in each pointing and adopts the readout mode and number of groups yielding the optimum depth. However each set of observations can be adapted to use different strategies. For example where data volume is a concern the medium tier could instead utilise  \texttt{DEEP8} (with 5 groups) to yield a similar sensitivity.
-
-% \noindent
-% \textbf{Alternative read-out/$N_{\rm exp}$ strategies} Because we don't ab initio know the exact configuration of the available parallel observing slots our fiducial visits could be achieved with either one or multiple exposures. In the table below we show several, though not exhaustive, possible configurations for each tier. For example, for the medium tier, while adopting a \texttt{MEDIUM8} readout mode with 10 groups (and a single exposure) yields a slightly more sensitive image, adopting the \texttt{DEEP8} readout mode with 5 groups reduces the data volume considerably. \todo{Is this needed.}
-
-% \begin{center}
-% \begin{tabular}{ |l|c|c|c|c|c| } 
-%  \hline
-% Readout pattern & $N_{\rm groups}$ & $N_{\rm exp}$ & Data Volume/MB & Duration$/s$ & F277W depth ($5\sigma$, AB mag) \\
-% \hline
-% MEDIUM8 & 5 & 1 & 514 & 515 & 27.63 \\
-% SHALLOW4 & 10 & 1 & 942 & 526 & 27.66 \\
-% SHALLOW4 & 5 & 2 & 1027 & 515 & 27.55 \\
-% \hline
-% DEEP8 & 5 & 1 & 514 & 945 & 27.99 \\
-% MEDIUM8 & 10 & 1 & 942 & 1052 & 28.03 \\
-% MEDIUM8 & 5 & 2 & 1027 & 1031 & 28.02 \\
-% SHALLOW4 & 10 & 2 & 1883 & 1052 & 28.04 \\
-% SHALLOW4 & 5 & 4 & 2054 & 1031 & 27.94 \\
-% \hline
-% DEEP8 & 10 & 1 & 942 & 2019 & 28.33 \\
-% DEEP8 & 5 & 2 & 1027 & 1890 & 28.37 \\
-% MEDIUM8 & 10 & 2 & 1883 & 2104 & 28.42 \\
-% MEDIUM8 & 5 & 4 & 2054 & 2061 & 28.41 \\
-% \hline
-% \end{tabular}
-% \end{center}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
