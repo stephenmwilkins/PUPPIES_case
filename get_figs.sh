@@ -17,6 +17,7 @@ cp ../analysis/survey_comparison/figs/F200W.pdf figs/
 cp ../analysis/LF/figs/CN_surveys.pdf figs/
 cp ../analysis/LF/figs/CN_models.pdf figs/
 cp ../analysis/LF/figs/LF_evo.pdf figs/
+cp ../analysis/LF/figs/LF_models_10.pdf figs/
 cp ../analysis/LF/figs/alpha.pdf figs/
 
 
