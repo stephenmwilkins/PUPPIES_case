@@ -32,7 +32,7 @@ cp ../analysis/beta/figs/C_beta_MTOL.pdf figs/
 
 #
 # --- CC selection
-cp ../analysis/Yung19/CC/figs/s_f_F150W.png figs/
+cp ../analysis/Yung19/CC/figs/s_f_F115W.png figs/
 
 #
 # --- SED
