@@ -117,6 +117,17 @@ Currently there are inconsistencies, and large uncertainties, in the best availa
 Overall, the observed luminosity function of galaxies encodes both the  detailed physics of star formation in addition to the effect of dust attenuation. From a theory perspective both of these are sufficiently uncertain, particularly in the early Universe, that different modelling approaches, despite yielding similar results at low-redshift, diverge at high-redshift. This is demonstrated in Figure \ref{fig:CN} where we show the expected cumulative number of galaxies expected in PUPPIES for a range of models. This wide variation demonstrates that the study of galaxies during this epoch has a great potential to inform our understanding of galaxy formation and evolution in the early Universe.
 
 
+\noindent
+\underline{\bf Synergy with existing and planned surveys - } PUPPIES will, partly through the expected availability of suitable parallel observing opportunities and partly through the primary scientific objectives, naturally complement planned programmes on \emph{Webb}, specifically CEERS and JADES. 
+
+\begin{SCfigure}
+    \includegraphics[width=0.6\textwidth]{figs/F200W.pdf}
+      \caption{\protect\rule{0ex}{5ex} The cumulative area probed by PUPPIES, JADES, and CEERS, as a function of the F200W depths. \textbf{PUPPIES extends the depth and area of public NIRCam imaging.}}
+      \label{fig:depth}
+\end{SCfigure}
+
+
+
 % THIS TEXT IS TAKEN FROM ANOTHER PROPOSAL IN PREP - IT SHARES SOME COIs SO I FEEL ITS FINE AS A REFERENCE
 
 % The first 500 Myr of galaxy evolution (z>10) was a transformative period in our Universe, as the first galaxies began to coalesce, enriching and ionizing their environments, forever altering the course of subsequent gas accretion and star formation. While deep and wide surveys with HST (e.g., HUDF [PI Illingworth], CANDELS [PIs Faber & Ferguson], Hubble Frontier Fields [PI Lotz]) led to the discovery of ∼1000 galaxy candidates at 6< z <8, Hubble has only scratched the surface at z>9, with just a handful of z ∼9–11 tenuous (e.g., <10σ significance in 1–2 imaging bands) candidates [27, 4]. Pushing HST’s limits has led to a tension in published observational results. While there is agreement that the observable (MUV < −17) cosmic SFR density smoothly declines from z = 4 to 8 [e.g., 14, 6], some [e.g., 27] find evidence for an accelerated decline at z > 8, while others [e.g., 25, 12] find evidence for a continued smooth decline to earlier times. The absence of robust observational constraints leaves theoretical models completely unconstrained at z >9 (Figure 2), where differences in their physical star-formation and feedback prescriptions result in a wide range of predictions for the abundance of galaxies during this epoch. This leads to enormous uncertainty on plausible timelines for the reionization of the intergalactic medium (IGM), where models which follow the steep SFR density evolution are consistent with a slow beginning and rapid completetion, while those which follow the shallow SFR evolution find an earlier beginning and more smooth evolution of the reionization process [e.g. 31, 15].
@@ -300,23 +311,25 @@ Related to this is that it is clear that merging activity is very important for 
 \justifyobservations   % Do not delete this command.
 % Enter your description of the observations.
 
+In this section we justify our choices of survey parameters including the choice of filters, depth, and area.
+
 \noindent
 \underline{\bf Filter choice: photometric redshifts -- } Simulations show that the combination of 3 filter pairs: {\bf F115W}, {\bf F150W}, {\bf F200W}, {\bf F277W}, {\bf F356W}, and {\bf F444W} is the optimum choice for \emph{robustly} identifying $z>9$ star forming galaxies. 2 pairs can in principle be used to detect galaxies $9<z<11$ however the contamination rate is higher and the accuracy/precision at $z>11$ drops significantly. 2 pairs also limits the extent to which the UV continuum slope $\beta$ can be measured \emph{consistently} across redshifts. Adding {\bf F090W} has little effect on the the reliability of the redshifts of galaxies at $z>9$ though does extend the redshift range down to $z\sim 7$ providing increased legacy science. While noting that 3 filter pair strategy best matches our scientific objectives these can be partially met or even \emph{exceeded} using a 2 or 4 pair strategy respectively. To keep PUPPIES as flexible as possible we can also make use of opportunities better suited to a 2 or 4 pair strategy though note a preference those opportunities amenable to our default scenario.
 
-
-\underline{\bf Filter choice: physical properties -- } Constraining the chemical and dust enrichment of galaxies at $9<z<11$ requires that we probe the rest-frame UV continuum with at least a single colour, and ideally with several bands providing a consistent measurement of the same wavelength range across several redshifts. A 6-band strategy is ideal in this respect as it allows the UV continuum to probed with 3 bands uncontaminated by the Lyman-$\alpha$ and Balmer breaks, encompassing the entire rest-frame UV, across our entire target redshift range. 
-
-
-\begin{SCfigure}
-    \includegraphics[width=0.6\textwidth]{figs/SED.pdf}
-      \caption{\protect\rule{0ex}{10ex} The expected NIRCam fluxes of a $2\times 10^{8}\ {\rm M_{\odot}}$ star forming galaxies at $z=9$, $z=11$, and $z=13$. \todo{Very similar to WAFLS figure.}}
-      \label{fig:SED}
-\end{SCfigure}
+\noindent
+\underline{\bf Filter choice: physical properties -- } Constraining the chemical and dust enrichment of galaxies at $9<z<11$ requires that we probe the rest-frame UV continuum with at least a single colour, and ideally with several bands providing a consistent measurement of the same wavelength range across several redshifts. As demonstrated in Fig. \ref{fig:SED} a 6-band strategy is ideal in this respect as it allows the UV continuum to probed with 3 bands uncontaminated by the Lyman-$\alpha$ and Balmer breaks, encompassing the entire rest-frame UV, across our entire target redshift range. A 4-band strategy allows the measurement of the slope albeit with only a pair of filters uncontaminated by the break.
 
 
-As demonstrated using simulated galaxies in Figure \ref{fig:beta}, when combined with F444W the degeneracy of $\beta$ with these physical properties can be broken allowing the measurement of stellar masses, specific star formation rates, and dust attenuation. Measuring the dust attenuation not only allows us to account for obscured star formation but will also help constrain the mechanism(s) responsible for the assembly of the large observed reservoirs of dust in the early Universe.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figs/SED_9.pdf}
+    \includegraphics[width=0.3\textwidth]{figs/SED_10.pdf}
+    \includegraphics[width=0.3\textwidth]{figs/SED_11.pdf}
+    \caption{The model spectral energy distribution and NIRCam fluxes of a star forming galaxy at $z=9$, $10$, and $11$. The shaded area denotes the rest-frame UV continuum between the Lyman-$\alpha$ and Balmer breaks. The alternative 4-band strategy is denoted by the filled symbols. \textbf{The 6-band PUPPIES strategy allows the consistent measurement of the UV continuum slope across the entire UV continuum and redshift range. An alternative 4-band strategy allows the measurement of the slope albeit with a pair of filters uncontaminated by the break. The 6-band strategy also allows us to measure a single band beyond the Balmer-break, essential for measuring stellar masses.}}
+    \label{fig:SED}
+\end{figure}
 
-
+The strength of the rest-frame UV - optical colour is a well established diagnostic of the recent star formation activity in galaxies. However, the colour is also sensitive to dust attenuation and thus, in the absence of additional constraints, the UV - optical colour is degenerate. However, the UV continuum slope $\beta$ is a well established diagnostic of dust attenuation: redder galaxies are generally dustier. Combining these two diagnostics then allows us to constrain both the dust attenuation and the specific star formation rate. This is demonstrated in  Fig. \ref{fig:beta} where simulation galaxies, from the FLARES project \citep{2020MNRAS.tmp.3168L}, are shown in the $\beta$ and F356W-F444W plane and colour coded by $A_{1500}$ (left) and specific star formation rate (right). At fixed $\beta$ F356W-F444W is correlated with specific star formation rate. For fields observed with our 6-band strategy PUPPIES will enable the measurement of the stellar masses and specific star formation rates.
 
 \begin{figure}[h!]
     \centering
@@ -328,9 +341,9 @@ As demonstrated using simulated galaxies in Figure \ref{fig:beta}, when combined
 \end{figure}
 
 \noindent
-\underline{\bf Area and Depth:} PUPPIES is an opportunity led program: we are interested in obtaining deep NIRCam imaging in 10-20 independent pointings to complement the existing shallower, but wider, Cosmic Evolution Early Release Science (CEERS) survey. Compared to a similarly sized contiguous survey 10-20 independent sight-lines should reduce the cosmic variance contribution to the total variance by around $3-5$.
+\underline{\bf Area and Depth - } In the absence of cosmic variance, the core science objective of PUPPIES - to constrain the faint-end slope and normalisation of the $9<z<11$ - is best realised by going as deep as possible. This is both because the expected number of galaxies increases faster than $f_{\nu}^2$ due to the steepness of the luminosity function and going deeper extends the luminosity range. Going deeper also provides stronger complementarity with the public $\sim 90\ {\rm arcmin}^2$ CEERS NIRCam imaging. However, a single, or small number of fields, is susceptible to cosmic-variance, which will dominate over the statistical (Poisson) variance \citep[e.g][]{2020MNRAS.499.2401T}. From our analysis, based on the methodology of \citet{2020MNRAS.499.2401T}, a good compromise is afforded by combining $10-20$ pointings with durations $10^4-10^5$s long. 
 
-\noindent
+\underline{\bf Availability of deep NIRCam parallel opportunities - }
 To determine the type, and thus potential depth, of opportunities that are available we use the public GTO and ERS APTs and filter out all observations that 1) already have attached coordinated parallels, 2) have the \texttt{NoParallel} flag set, and 3) those of targets with high-background ($>0.3\ {\rm MJy/Sr}$). To estimate the amount of time available to teach unique target we sum the science durations of all observations using the same instrument. The predicted distribution of opportunities with science durations $t_{\rm SD}>10^{4}$ s is then shown in Figure \ref{fig:time_background}: this analysis suggests $\sim 50$ GTO/ERS opportunities with $t_{\rm SD}>10^{4}$ s; assuming this distribution is representative of the final Cycle 1 observation suggests there should be $100-150$ useful opportunities.
 
 \begin{SCfigure}
@@ -340,7 +353,7 @@ To determine the type, and thus potential depth, of opportunities that are avail
 \end{SCfigure}
 
 \noindent
-\underline{\bf Fiducial programme:} Armed with this predicted knowledge we define a fiducial programme consisting of three tiers - ABC - assuming 4, 3, and 2 \texttt{deep8} 10 group exposures respectively. Reflecting the greater availability of shorter duration opportunities we choose, for this fiducial programme, to obtain 3, 5, and 10 pointings for the A, B, and C tiers respectively. The resulting area and depths achieved in each tier are summarised below. \textbf{The total exposure time as reported by the APT for the combination of the 3 tiers is 79.3 hours}.
+\underline{\bf Fiducial programme:} Armed with this knowledge of the predicted number and distribution of available parallel opportunities we define a fiducial programme consisting of three tiers - ABC - assuming 4, 3, and 2 \texttt{deep8} 10 group exposures respectively. Reflecting the greater availability of shorter duration opportunities we choose, for this fiducial programme, to obtain 3, 5, and 10 pointings for the A, B, and C tiers respectively. The resulting area and depths achieved in each tier are summarised below. \textbf{The total exposure time as reported by the APT for the combination of the 3 tiers is 79.3 hours}. This fiducial programme serves only to demonstrate what should be possible with a PUPPIES-\emph{like} programme and not a firm requirement.
 
 \begin{table}[h!]
 \footnotesize
@@ -362,23 +375,8 @@ Tier & $N_{p}$ & Area$/{\rm arcmin^2}$ & F115W & F150W & F200W & F277W & F356W &
 \end{table}
 
 \noindent
-\underline{\bf Preferred distribution:} We would preferentially go deeper while keeping at least 10 independent sight-lines. 
-
-
-\noindent
-\underline{\bf Synergy with existing and planned surveys} PUPPIES will, partly through the expected availability of suitable parallel observing opportunities and partly through the primary scientific objectives, naturally complement planned programmes on \emph{Webb}, specifically CEERS and JADES. A comparison of the F150W, F200W, and F356W $5\sigma$ point-source depths and areas expected by WAFLS, CEERS, and JADES are shown in Figure \ref{fig:depth}. Figure \ref{fig:depth} also demonstrates the dramatic improvement of WAFLS over existing Hubble and Spitzer surveys. Compared to programmes reaching (surveying) a similar depth (area) on Hubble, WAFLS probes an approximately 10$\times$ larger area (1 magnitude deeper). There are no Spitzer surveys reaching a comparable depth in F356W/F444W with WAFLS reaching 2 magnitudes deeper than similar area surveys. By focusing on the $z>9$ Universe WAFLS will also complement the upcoming Euclid satellite which will be limited to $z\approx 8$. \todo{Needs updating}
-
-\begin{SCfigure}
-    \includegraphics[width=0.6\textwidth]{figs/F200W.pdf}
-      \caption{\protect\rule{0ex}{5ex} The cumulative area probed by PUPPIES, JADES, CEERS, and existing \emph{Hubble} and \emph{Spitzer} surveys as a function of the H/F150W-band, F200W, and $3.6\mu$m/F356W (right) depths. \todo{Which is better?}}
-      \label{fig:depth}
-\end{SCfigure}
-
-
-\noindent
-\underline{\bf Additional constraints} When selecting potential parallel slots we will not only consider potential science duration and background but also the availability of ancillary observations and accessibility to other facilities (e.g. ALMA).
-
-
+\underline{\bf Preferred distribution and flexibility - } While 
+This fiducial programme defined above serves only to demonstrate what should be possible with a PUPPIES-\emph{like} programme and not a firm requirement. Within the confines of our requirement for 10-20 deep (F200W$>29$), low-background, independent pointings we are flexible in our choice observing opportunities. We will however seek to obtain a balanced programme mixing deeper and shallower opportunities. Where possible we will also express a preference for targets with meaningful existing ancillary observations and accessible to the Southern Hemisphere.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -420,7 +418,7 @@ Tier & $N_{p}$ & Area$/{\rm arcmin^2}$ & F115W & F150W & F200W & F277W & F356W &
 
 \clearpage
 
-\bibliography{WAFLS,WAFLS_quiescent}
+\bibliography{PUPPIES}
 
 
 \end{document}          % End of proposal. Do not delete this line.
