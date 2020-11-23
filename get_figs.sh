@@ -32,7 +32,9 @@ cp ../analysis/beta/figs/C_beta_MTOL.pdf figs/
 
 #
 # --- SED
-cp ../analysis/SED/figs/SED.pdf figs/
+cp ../analysis/SED/figs/SED_9.pdf figs/
+cp ../analysis/SED/figs/SED_10.pdf figs/
+cp ../analysis/SED/figs/SED_11.pdf figs/
 #
 # --- Parallel opportunities
 cp ../analysis/apt_analysis/figs/time_background.pdf figs/
