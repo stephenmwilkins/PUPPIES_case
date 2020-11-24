@@ -4,7 +4,7 @@
 %
 %
 %
-%    JAMES WEBB SPACE TELESCOPE
+%Z    JAMES WEBB SPACE TELESCOPE
 %    OBSERVING PROPOSAL TEMPLATE
 %    FOR CYCLE 1 (2017)
 %
@@ -32,6 +32,8 @@
 \usepackage{graphicx}
 \usepackage{floatrow}
 \usepackage{sidecap}
+\usepackage{wrapfig}
+\usepackage{soul}
 \sidecaptionvpos{figure}{t}
 
 
@@ -55,94 +57,72 @@
 %
 %
 
-\todo{Abstract. Delete later.}
-
-Pure parallel opportunities on \emph{Webb} offer the opportunity, \emph{almost at no extra telescope time cost}, to build up a large amount of public NIRCam imaging. We propose to exploit the longest available parallel opportunities to build up $\sim 150\ {\rm arcmin^2}$ of deep (F200W$=29-29.5$, $5\sigma$ point-source) multi-band NIRCam imaging data. This proposal - the Public Ultradeep Pure Parallel Imaging Extragalactic Survey (PUPPIES) - will push at least $0.5$ mag deeper than the public Cosmic Evolution Early Release Science Survey (CEERS) covering a comparable area. The core objective of PUPPIES is to constrain the faint-end slope and normalisation of the rest-frame UV luminosity function at $z>9$. Through  multi-band observations PUPPIES will constrain star formation and metal enrichment histories of these galaxies and constrain the formation mechanism of dust at high-redshift. Together these objectives will provide the essential observational constraints with  which to test and refine galaxy formation models. The PUPPIES data-set will also have enormous legacy value serving as a foundation on which to obtain spectroscopic observations and additional imaging both with \emph{Webb} and other facilities. Combined these will allow us build a coherent picture of the assembly of stellar mass over much of the Universe's history. 
-
-
 \clearpage
 
 \justification          % Do not delete this command.
 
-\section{Background}
+\textbf{We propose PUPPIES - the Public Ultradeep Pure Parallel Imaging Exploration Survey - a treasury pure parallel NIRCam public imaging program. PUPPIES will exploit the longest pure parallel opportunities to build $\sim 150\ {\rm arcmin^2}$ of deep (F200W$=29.2-29.6$, 5$\sigma$ point-source) multi-band imaging. PUPPIES will probe an area $1-2\times$ larger than the Cosmic Evolution Early Release Science Survey (CEERS) but $0.2-0.6$ mag deeper. While focused on exploring faint sources in the distant Universe, PUPPIES will enable a large amount of legacy science ranging from probing the population of low-mass stars and sub-stellar objects in the Milky Way to building a coherent picture of the assembly of stellar mass over much of the Universe's history.} 
 
-One of the scientific cornerstones of the \emph{James Webb Space Telescope} is determining how the first stars and galaxies formed in the early Universe. As such, \emph{Webb}'s capability will reveal how the first galaxies assembled, the nature of the sources that re-ionised the Universe, and how the diverse galaxy population we can study at $z \sim 3-6$ was established at higher redshifts.  We can observe galaxies up to $z \sim 7$ with Hubble, but we know from these observations that the first epochs of galaxy formation are several 100 Myrs earlier.  As such, \emph{Webb} has an excellent chance of seeing the very first epochs of galaxy formation.
+% As such, \emph{Webb}'s capability will reveal how the first galaxies assembled, the nature of the sources that re-ionised the Universe, and how the diverse galaxy population we can study at $z \sim 3-6$ was established at higher redshifts.  We can observe galaxies up to $z \sim 7$ with Hubble, but we know from these observations that the first epochs of galaxy formation are several 100 Myrs earlier.  Therefore, \emph{Webb} has an excellent chance of seeing the very first epochs of galaxy formation.
 
-The Hubble Space Telescope has spent several 1000s of orbits over three decades to solve the problem of evolution/formation of galaxies which existed when the universe was 500 Myr old, until today. This has led to fantastic results on early galaxy formation and cosmic dawn at redshifts $z \sim 6-8$. Yet we know from these observations that we have not yet reached the very first epoch of galaxies due to the limited depth in the near-infrared provided by Hubble, and the fact that Hubble's reddest filter is at 1.6$\mu$m. This is a problem that will necessarily receive intense attention with JWST from both GTO and GO observations.  Because this problem is observationally so difficult, but of vast importance, it will require clever strategies and multiple data collecting methods.
+%The past near-decade of wide and deep surveys with the {\it Hubble Space Telescope’s} ({\it HST}) Wide Field Camera 3 (WFC3) has begun the process of exploration of this key epoch in the Universe’s history.  
 
-The past near-decade of wide and deep surveys with the {\it Hubble Space Telescope’s} ({\it HST}) Wide Field Camera 3 (WFC3) has begun the process of exploration of this key epoch in the Universe’s history.  Wide and deep surveys with WFC3 over the Hubble Ultra Deep Field (HUDF; \citealt{Beckwith2006, Bouwens2010, Dunlop2013}), Cosmic Assembly Near-Infrared Deep Extragalactic Legacy Survey (CANDELS; \citealt{Grogin2011, Koekemoer2011}), and the Frontier Fields project \citep{Lotz2017} enabled the construction of the first large samples of galaxies at $z>7$.  
+%Wide and deep surveys with WFC3 over the enabled the construction of the first large samples of galaxies at $z>7$.  
 
-Among the discoveries made with these data to date include: 1) While the faint-end slope of the UV luminosity function steepens significantly at $z>7$, the bright-end shows less evolution (e.g., \citealt{Bouwens2015, Finkelstein2015}); 2) The abundance of galaxies, when integrated to very faint limits from lensing studies (e.g., \citealt{Atek2015, Livermore2017}) imply that galaxies produce enough photons to complete reionization by $z\sim$ 6, though only if the ionizing photon escape fraction is $\gtrsim$10\% (e.g., \citealt{Duncan2015, Robertson2015}); 3) Bright/massive galaxies appear modestly dusty, showing an early onset of chemical enrichment (e.g., \citealt{Finkelstein2012, Bouwens2014}), and 4) Some bright/massive galaxies exist out to at least $z \sim$ 10 (e.g., \citealt{Oesch2016, Salmon2018}).
+% This is an issue that will necessarily receive intense attention with \emph{Webb} from both GTO and GO observations.  Because this problem is observationally so difficult, but of vast importance, it will require innovative strategies and multiple data collecting methods.  We do not know if $z > 9$ galaxies will be a population of plentiful low mass ones, or less common high-mass galaxies.  Because of this, several different observing strategies are needed to fully explore this early epoch.
 
-Little is however known concerning the galaxy population at $z > 9$ beyond the discovery of a few candidate galaxies.  While some observational studies of the evolution of the galaxy population imply a dramatic decline in the UV luminosity density (and by extension, star-formation rate density) at $z >$ 9 (e.g., \citealt{Bouwens2015b, Oesch2018}), others see no such decline (e.g., \citealt{Coe2013, McLeod2016}), and the discovery of an unexpectedly luminous galaxy at $z >$ 10 (e.g., \citealt{Oesch2016}) points towards their existing potentially significant amounts of star-formation activity waiting to be discovered in this early epoch of galaxy formation. The high stellar masses of galaxies at $z \sim 7$ and the fact that the the UV continuum shows no signs of Pop III stars (e.g., \citealt{Bhatawdekar2020}), strongly suggests that the first epoch of galaxy formation has yet to be found. Furthermore, we do not know if these galaxies at $z > 9$ will be plentiful low mass ones, or less common high-mass galaxies.  Because of this, several different observing strategies are needed to fully explore this early epoch.
+\noindent\textcolor[RGB]{160,160,160}{\rule{\linewidth}{0.2pt}}
 
-Predictions of the properties of galaxies at $z > 9$ also varies in different simulations (see left-panel of Fig. 4), and more data than what is provided in existing GTO programs are needed to distinguish difference scenarios. It is clear however that the simulations that account for the evolution of the physical conditions promoting star formation, including its dependence on gas density, show that {\it Webb}-detectable galaxies should exist at $z >$ 9 (e.g., \citealt{Yung2019}).  A key question for the opening cycles of {\it Webb} is this — is there significant star-formation activity at  $9<z<12$, or does the limiting redshift of {\it HST} just happen to coincide with the time when the universe began its first large-scale episode of star formation, with only sporadic galaxy formation before?
+The study of the first stars and galaxies (first light) is one of the scientific cornerstones of the \emph{Webb Telescope} and is built on the legacy established by the \emph{Hubble Space Telescope}. \emph{Hubble} spent thousands of orbits over three decades to constrain the evolution/formation of galaxies, which it can observe from when the universe was 500 Myr old until today.  This includes large dedicated projects such as the Hubble Ultra Deep Field (HUDF; \citealt{Beckwith2006, Bouwens2010, Dunlop2013}), the Cosmic Assembly Near-Infrared Deep Extragalactic Legacy Survey (CANDELS; \citealt{Grogin2011, Koekemoer2011}), and the Hubble Frontier Fields \citep{Lotz2017}. While these have led to significant insight into early galaxy formation  at redshifts $z \sim 6-8$ we have not yet reached the first epoch of galaxies, due to the \emph{Hubble}'s limited sensitivity and wavelength coverage. Little is therefore known concerning the galaxy population at $z > 9$ beyond the discovery of a few candidate galaxies (REFERENCES).  
 
-To answer these questions we propose a pure parallel {\it Webb} program, - the {\bf Public Ultradeep Pure Parallel Imaging Extragalactic survey (PUPPIES)}.   Like \emph{Hubble} before it, \emph{Webb} has the capability to use a second instrument in parallel to prime observations. This allows us to obtain observations across many independent locations on the sky virtually for free. \emph{Hubble} pure parallel programs including HIPPIES \citep{Yan2011}and BoRG \citep{Trenti2011} were instrumental to providing constraints on the bright-end of the high-redshift $z>6$ luminosity function. Based on the planned GTO and ERS programs it is anticipated that the pure parallel opportunities available to \emph{Webb} will cover a wider range of exposure times and thus potential depths. 
-\vspace{2mm}
-\noindent
-\textbf{We propose to take advantage of the deepest of these parallel observing opportunities to build $\sim 150\ {\rm arcmin^2}$ of deep F200W$=29.15-29.6$ $1-5\mu$m NIRCam imaging.  This program, PUPPIES, will complement and expand the existing GTO programs by providing data on the faint-to-mid portion of the UV luminosity function. For example in comparison to the ERS program, the Cosmic Evolution Early Release Science (CEERS), PUPPIES will be $0.2-0.6$ mag deeper over a similar or larger area.}
+In its earliest cycles \emph{Webb} will make progress in exploring the $z>9$ Universe through deep near-IR imaging. This enables the identification of individual galaxies and the measurement of many of their key properties including star formation rates, stellar masses, and dust attenuation. Through large tiered surveys \emph{Webb} will ultimately constrain the population demographics providing the essential observations to constrain galaxy formation models. Once identified, \emph{Webb}'s spectroscopic capabilities will be turned on these early galaxies yielding detailed constraints on their star formation and metal enrichment histories.
 
-The planned GTO/ERS programs, in particular CEERS, the Webb Medium Deep Fields (WMDF), and the JWST Advanced Deep Survey (JADES), will begin the process of obtaining stronger constraints on the galaxy population at $z>9$.   However, while all of these programs will likely find $z > 9$ galaxies, they are subject to strong cosmic variance as well as the limited areas probed.  JADES will likely yield more systems than PUPPIES at these redshifts, but the JADES observations will be spread over the first 3 cycles, with the full data-set potentially not becoming public until 4 years after JWST launch.   PUPPIES will semi-randomly probe the sky and the data will be public immediately for the community to use.
+Planned GTO/ERS programs, in particular the Cosmic Evolution Early Release Survey (CEERS), the Webb Medium Deep Fields (WMDF), and the JWST Advanced Deep Survey (JADES), will begin the process of obtaining these constraints through multi-band NIRCam imaging. While immediately public, CEERS will probe a relatively modest $\sim 100\ {\rm arcmin^{2}}$ reaching just shy of F200W$=29$ ($M_{1500}\approx -18.5$ at $z=10$). Thus while CEERS will provide our first glimpse of the $z>9$ galaxy population it will yield poor constraints on the UV luminosity function. This is particularly true of the faint galaxy population, now well established to provide the bulk of the photons responsible for reionisation (Robertson et al.\ 2019; Finkelstein et al.\ 2019). On the other hand while JADES will  yield large numbers of $z > 9$ sources it surveys only a pair of contiguous fields leaving it susceptible to cosmic variance. Furthermore, JADES observations will not be immediately public, with the bulk of observations not publicly available until at least $2-3$ years after launch. 
 
-\begin{SCfigure}
-    \includegraphics[width=0.6\textwidth]{figs/F200W.pdf}
-      \caption{\protect\rule{0ex}{5ex} The cumulative area probed by the fiducial PUPPIES program, JADES, and CEERS, as a function of the F200W depth. \textbf{PUPPIES will more than double the area of public deep NIRCam imaging imaging while also pushing $0.2-0.6$ mag deeper.}}
-      \label{fig:depth}
-\end{SCfigure}
+One way to efficiently overcome these issues is with a pure parallel program. Like \emph{Hubble} before it, \emph{Webb} has the capability to use a second instrument in parallel to the prime observations. This allows us to obtain deep data across many independent locations on the sky virtually for free, critical for minimising cosmic variance. \emph{Hubble} pure parallel programs including HIPPIES \citep{Yan2011} and BoRG \citep{Trenti2011} were instrumental to providing constraints on the bright-end of the high-redshift $z>6$ luminosity function. Unlike \emph{Hubble} however, \emph{Webb} should have a large number ($>50$) of opportunities enabling the acquisition of deep (F200W$>29$, $5\sigma$ point-source) multi-band (4 or 6 filter) NIRCam imaging. 
 
 \vspace{2mm}
 \noindent
-While not reaching the depth of the JADES survey PUPPIES will be publicly available in \emph{Webb}'s first cycle to the entire astronomical community. PUPPIES will address a host of issues, including the number of early $z > 9$ galaxies, their properties such as, stellar populations, structure and sizes and the correlations of these quantities.  These are all important features for solving the very early formation of galaxies that will be a public data-set to complement GTO imaging programs for a full accounting of the $z > 9$ galaxy population and to test ideas and models concerning the formation of the first galaxies which need good statistics from low shot noise and sampling across luminosities.
+Hence we propose to exploit the deepest parallel opportunities to obtain F200W$=29-30$ ($5\sigma$ point-source) public imaging over an area $1-2\times$ larger than CEERS. This program - the \textbf{Public Ultradeep Pure Parallel Imaging Exploration Survey (PUPPIES)} - will tackle a range of science goals, with a strong focus on the $z>9$ Universe. Our primary objectives include: identifying $\sim 100$ galaxies at $z>9$: more than $3\times$ ($5\times$) the number expected in CEERS at $z>9$ ($z>11$); placing meaningful constraints on the faint-end of the $9<z<11$ luminosity function; and studying properties such as: star formation rates, stellar populations, dust attenuation, structure, and sizes and the correlations of these quantities. These are all important features for solving the very early formation of galaxies. In this respect PUPPIES will be a public data-set to complement GTO imaging programs for a full accounting of the $z > 9$ galaxy population and to test ideas and models concerning the formation of the first galaxies which need good statistics from low shot noise and sampling across luminosities. Beyond these primary objectives, PUPPIES will have tremendous legacy value enabling the answer of multiple open questions in both galactic and extragalactic astronomy. To aid in harnessing the tremendous legacy potential of PUPPIES we will rapidly release high-level data products, including reduced imaging, source catalogues, and catalogues with redshifts and physical properties from SED fitting.  
 
-\todo{It takes us a long time to actually describe PUPPIES. We might want an opening summary. Basically the abstract.}
 
-\section{Science Goals}
+\subsection*{\bf \underline{Constraining the faint-end of the UV luminosity function at $z > 9$}}\label{sec:UVLF}
 
-\noindent In this section we enumerate the various science goals of PUPPIES and what we will learn about the early galaxy population through our analyses. This includes the following science topics, which we describe in some detail:
 
-\begin{enumerate}
-\item \textbf{The identification of $\sim 100$ galaxies at $z>9$: more than $3\times$ ($5\times$) the number expected in CEERS at $z>9$ ($z>11$).}
-\item \textbf{Cosmic variance minimized constraints on the faint-end of the $9<z<11$ UV luminosity function.} 
-\item \textbf{The measurement of the physical properties of the faint $9<z<11$ galaxies including their star formation rates, stellar masses, dust attenuation, and morphologies.}
-\end{enumerate}
+% Among the discoveries made with these data to date include: 1) A faint-end UV luminosity function slope which steepens at $z>4$, but a bright-end with less evolution (e.g., \citealt{Bouwens2015, Finkelstein2015}); 2) The abundance of galaxies from lensing studies (e.g., \citealt{Atek2015, Livermore2017}) implying that galaxies produce enough photons to complete reionization by $z\sim$ 6 (e.g., \citealt{Duncan2015, Robertson2015}); 3) Bright/massive galaxies appear modestly dusty, showing an early onset of chemical enrichment, with no signs of Pop III star colors (e.g., \citealt{Finkelstein2012, Bouwens2014, Bhatawdekar2020}), and 4) Some bright/massive galaxies exist out to at least $z \sim$ 10 (e.g., \citealt{Oesch2016, Salmon2018}) showing that potentially significant numbers of galaxies are waiting to be discovered at this early epoch of galaxy formation.
 
-\subsection{\bf \underline{Constraining the faint-end of the UV luminosity function at $z > 9$}}\label{sec:UVLF}
 
-A primary goal for \emph{Webb} is placing constraints on the UV luminosity function across the epoch of re-ionization $6<z<12$. When observing galaxies at the highest redshifts we are interested in, first of all, in finding and characterizing galaxies which exist at these early epochs.  The most straightforward way of doing this is by using Ultra-Violet (UV) luminosity function of galaxies, which gives the number densities of galaxies at different UV luminosities, and is the simplest measure of galaxies at these redshifts that requires the least amount of assumptions.  Furthermore, the rest-frame ultraviolet luminosity function, as well as the stellar mass function, provides us answers to fundamental questions about the way that the first galaxies and stars formed.
+A primary goal for \emph{Webb} is placing constraints on the UV luminosity function across the epoch of re-ionization $6<z<12$, particularly at $z>9$ where existing constraints from \emph{Hubble} are based on only a handful of candidates.
 
-Many different physical processes determine and influence the formation and early evolution of the first galaxies, and thus the corresponding emergence of UV light. The gas density, processes of cooling, production of metals and dust, feedback processes and the role of magnetic fields all play a role. Indeed, predictions of the formation of the first galaxies vary significantly depending on assumptions on these properties went into the models. For example, although the lack of metals in early star formation means that gas cooling will be less efficient, and take longer to occur, this could potentially be counter-balanced by the more rapid formation time resulting from a higher gas density. Reproducing the observed luminosity function with plausible models is a powerful approach for understanding this issue. With PUPPIES, combined with similar deep programs such as JADES and CEERS, we will place strong constraints on both the bright and faint-end of the UV LF. Through comparison with models this will reveal important information about the efficiency of galaxy and star formation at the earliest times in the universe.
- 
+The observed rest-frame ultraviolet (UV) luminosity function is the key observational diagnostic of the early galaxy formation. Many different physical processes determine and influence the formation and early evolution of the first galaxies, and thus the corresponding emergence of UV light. The gas density, processes of cooling, production of metals and dust, feedback processes and the role of magnetic fields all play a role. As demonstrated in Fig. \ref{fig:models} predictions of the formation of the first galaxies vary significantly depending on assumptions on these properties went into the models: despite good agreement at $z<8$ by $z=9$  predicted luminosity functions have diverged. Reproducing the observed luminosity function with plausible models is then a powerful approach for understanding the role of these processes in the early Universe.
+
  \begin{figure}[h!]
     \centering
     \includegraphics[width=0.49\textwidth]{figs/CN_models.pdf}
     \includegraphics[width=0.49\textwidth]{figs/LF_models_10.pdf}
     \vspace{-5mm}
-    \caption{\emph{\underline{Left:}} The cumulative number of galaxies predicted to be accessible to PUPPIES and CEERS for a range of different empirical extrapolations and theoretical models. \emph{\underline{Right:}} Predicted $z\sim 10$ luminosity functions from a variety of models. \textbf{The expected number of galaxies at $z>9$ is uncertain demonstrating the constraining power of PUPPIES. PUPPIES will identify $70-140$ galaxies at $z>9$ and $4-18$ at $z>11$.}}
+    \caption{\emph{\underline{Left:}} The cumulative number of galaxies predicted to be accessible to PUPPIES and CEERS for a range of different empirical extrapolations and theoretical models \citep{2017MNRAS.469.2517W, 2018MNRAS.477..219M, 2019MNRAS.483.2983Y, 2020MNRAS.tmp.3168L}. \emph{\underline{Right:}} Predicted $z\sim 10$ luminosity functions for the same models. \textbf{The expected number of galaxies at $z>9$, and the overall shape and normalisation of the luminosity function, is uncertain demonstrating the constraining power of PUPPIES. PUPPIES will identify $70-140$ galaxies at $z>9$ and $4-18$ at $z>11$.}}
     \label{fig:models}
 \end{figure}
 
 
- 
- 
-Currently there are inconsistencies, and large uncertainties, in the best available measurements of galaxy number densities and luminosity functions at $z > 6$.  Based on the deepest existing Hubble data it is intriguing that there is an apparent steep decline of the number of galaxies at the highest redshifts, $z \sim 6-11$ (e.g., Ellis et al. 2012; Schenker et al. 2012; Bouwens et al. 2016). Based on extrapolating the UV luminosity function at lower redshifts, we should have found more systems at $z \sim 9-11$ than the candidates discovered in the deepest HST data (e.g., Oesch et al. 2013).  However, deep HST imaging of lensing clusters in the CLASH and HFF clusters have found a significant number of $z>6$ candidates (e.g., Atek et al. 2014; Monna et al. 2014; Vanzella et al. 2014; update).  This includes several lensed candidates at $z\sim 9$ behind the HFFs (e.g., Laporte et al. 2014; Schmidt et al. 2014; Zitrin et al. 2014).   Understanding this possible inconsistency, and minimizing the role of cosmic variance requires the deeper and larger area data which PUPPIES will provide.
+While some progress has been made by \emph{Hubble} there remain inconsistencies, and large uncertainties, in the best available measurements of galaxy number densities and luminosity functions, particularly at $z > 7$.  Based on the deepest existing \emph{Hubble} data it is intriguing that while some studies find an apparent steep decline of the number of galaxies at the highest redshifts, $z \sim 8-11$ (e.g., \citealt{Ellis2013, Schenker2013, Bouwens2016, Oesch2018}) others find no such strong decline (e.g., \citealt{Coe2013, McLeod2016}). Based on extrapolating the UV luminosity function at lower redshifts, we should have found more systems at $z \sim 9-11$ than the few candidates discovered in the deepest HST data (e.g., \citealt{Oesch2013}).  
 
-Overall, the observed luminosity function of galaxies encodes both the  detailed physics of star formation in addition to the effect of dust attenuation. From a theory perspective both of these are sufficiently uncertain, particularly in the early Universe, that different modelling approaches, despite yielding similar results at low-redshift, diverge at high-redshift. This is demonstrated in Figure \ref{fig:CN} where we show the expected cumulative number of galaxies expected in PUPPIES for a range of models. This wide variation demonstrates that the study of galaxies during this epoch has a great potential to inform our understanding of galaxy formation and evolution in the early Universe.
-
-
-Compounding the small number of sources is the fact that these programmes, as predominantly contiguous surveys, will suffer from cosmic variance increasing the uncertainty on the number of galaxies by $\approx 1.5-2\times$ compared to the statistical uncertainty alone\cite{2020MNRAS.499.2401T}\cite{2020MNRAS.496..754B}\cite{2008ApJ...676..767T}. 
-
-\todo{What will PUPPIES do}
-
+The key to providing stronger constraints on the faint-end of $z > 9$ luminosity function with \emph{Webb} are NIRCam imaging surveys. The public CEERS program will begin the process of collecting these essential observations with almost $100\ {\rm arcmin^2}$ of almost F200W$=29$ ($5\sigma$ point-source) multi-band imaging. However, CEERS alone lacks the area and depth to identify sufficiently large numbers of $z>9$ galaxies to place strong constraints on the luminosity function. At $z>9$ ($z>11$) CEERS will only identify $\sim 30$ ($\sim 2$) galaxies. While JADES will obtain both deeper and wider observations, it is limited to a pair of contiguous surveys leaving uncertainties on the number density dominated by cosmic variance. 
 
  \begin{figure}[h!]
     \centering
     \includegraphics[width=0.49\textwidth]{figs/CN_surveys.pdf}
     \includegraphics[width=0.49\textwidth]{figs/LF_evo.pdf}
     \vspace{-5mm}
-    \caption{\emph{\underline{Left:}} The cumulative number of sources predicted to observable to CEERS, CEERS+PUPPIES, and CEERS+PUPPIES+JADES.  \emph{\underline{Right:}} Expected constraints on the $z=9-12$ luminosity from CEERS alone (open symbols) and with PUPPIES. \textbf{PUPPIES will boost the number of galaxies at $z>9$ ($z>11$) by a factor of $4$ (5) compared to CEERS alone yielding much strong constraints on the $z=9-12$ luminosity function.}}
+    \caption{\emph{\underline{Left:}} The cumulative number of sources predicted, using predictions from \citet{2019MNRAS.483.2983Y}, observable to CEERS, CEERS+PUPPIES, and CEERS+PUPPIES+JADES.  \emph{\underline{Right:}} Expected constraints on the $z=9-12$ luminosity function from CEERS alone (open symbols) and with PUPPIES. \textbf{PUPPIES will boost the number of galaxies at $z>9$ ($z>11$) by a factor of $4$ (5) compared to CEERS alone yielding much strong constraints on the $z=9-12$ luminosity function.}}
     \label{fig:vs_CEERS}
 \end{figure}
+
+PUPPIES will overcome these issues by bridging the gap between CEERS and JADES in cycle 1 by collecting $\sim 150\ {\rm arcmin^2}$ multi-band observation with F200W=$29.2-29.6$. Crucially, unlike the contiguous fields surveyed by CEERS and JADES, PUPPIES will collect data in multiple independent sight lines, significantly reducing the impact of cosmic variance on uncertainties. Using the methodology of \citet{2020MNRAS.499.2401T} we find that, compared to a similar area contiguous survey, the PUPPIES strategy reduces cosmic variance by $3-4\times$ reducing the overall uncertainty by $\sim 2\times$ and leaving it mostly dominated by statistical (Poisson) noise. Fig. \ref{fig:vs_CEERS} demonstrates the improvement to the cumulative number of sources and luminosity functions at $z>9$ with the addition of PUPPIES compared to CEERS alone. PUPPIES will increase the number of accessible $z>9$ ($z>11$) sources by $\sim 4\times$ ($\sim 5\times$) compared to CEERS alone. As demonstrated in Fig. \ref{fig:alpha} this translates to the first meaningful constraints on the faint-end slope $\alpha$ at $z>8$. At $z=9$ we forecast being able to constrain $\alpha$ to $\pm 0.15$. Combined with constraints on the normalisation this is enough to differentiate between many different theoretical models and thus constrain some of the physical processes responsible for the formation of galaxies in the early Universe.
+
+
+
 
 \begin{figure}[h!]
     \centering
@@ -157,64 +137,55 @@ Compounding the small number of sources is the fact that these programmes, as pr
 
 
 
-
-
-
-
-
 \subsection*{\bf \underline{The Physical Properties of the First Galaxies}}
 
-\subsubsection*{\bf Early Enrichment with Metals and Dust}\label{sec:properties}
+\noindent
+\textbf{Early Enrichment with Metals and Dust} - As we look back towards the Big Bang the galaxies we discover become increasingly deficient in metals and dust. Exactly when and how the first galaxies became enriched with metals are key outstanding questions in galaxy formation and evolution.
 
-As we look back towards the Big Bang the galaxies we discover become increasingly deficient in metals and dust. Exactly when and how the first galaxies became enriched with metals is key outstanding questions in galaxy formation and evolution.
+While accurate measurements of the gas and stellar phase metallicities require deep rest-frame optical spectroscopy we can gain the first hints from photometry alone, specifically from the UV continuum slope $\beta$,  where $f_{\lambda}\propto\lambda^{\beta}$. Extremely blue ($\beta = -3$) slopes are only realised for extremely metal poor and dust free stellar populations. The robust identification of galaxies with such slopes will, for the first time, provide the first glimpse into virtually metal-free stellar populations. More generally the UV continuum slope, at least for young star forming galaxies as expected at $z>9$, is sensitive to dust attenuation, itself a tracer of metal enrichment. Thus, while the discovery of galaxies with extremely blue slopes will be exciting, the discovery of galaxies with $\beta > -2$, indicating the presence of dust, also provides useful observational constraints on the process of metal and dust enrichment in the early Universe \citep[e.g.,][]{2017ApJ...837L..21L}. 
 
-While accurate measurements of the gas and stellar phase metallicities require deep rest-frame optical spectroscopy we can gain the first hints from photometry alone, specifically from the UV continuum slope $\beta$,  where $f_{\lambda}\propto\lambda^{\beta}$. Extremely blue ($\beta = -3$) slopes are only realised for extremely metal poor and dust free stellar populations. The robust identification of galaxies with such slopes will, for the first time, provide the first glimpse into virtually metal-free stellar populations. More generally the UV continuum slope, at least for young star forming galaxies, is sensitive to dust attenuation, itself a tracer of metal enrichment. Thus, while the discovery of galaxies with extremely blue slopes will be exciting, similarly the discovery of galaxies with red $\beta > -2$ provides useful observational constraints on the process of metal and dust enrichment in the early Universe. 
+At present, constraints with \emph{Hubble} are effectively limited to $z\sim 7$ (e.g., \citealt{Finkelstein2012, Bouwens2014, Bhatawdekar2020}). Even there $\beta$ is only constrained with a single colour probing only a relatively narrow wavelength range leading to large uncertainties. While it is possible to measure $\beta$ at $9<z<11$ by combining {\em Hubble} and {\em Spitzer} observations \citep[e.g.,][]{2016MNRAS.455..659W} this relies on the significantly shallower, and often confused, {\em Spitzer} imaging resulting in much larger uncertainties. 
 
-At present, constraints with \emph{Hubble} are effectively limited to $z\sim 7$. Even there $\beta$ is only constrained with a single colour probing only a relatively narrow wavelength range leading to large uncertainties. While it is possible to measure $\beta$ at $9<z<11$ by combining {\em Hubble} and {\em Spitzer} observations \citep[e.g][]{2016MNRAS.455..659W} this relies on the significantly shallower, and often confused, {\em Spitzer} imaging resulting in much larger uncertainties. With our fiducial 6-band strategy we will be able to, for the first time, \emph{consistently} measure $\beta$ across the entire reionization epoch $6<z<12$.
+With our fiducial 6-band strategy we will be able to, for the first time, \emph{consistently} measure $\beta$'s with high-precision ($\Delta\beta <0.1$) across the entire reionization epoch $6<z<12$. In doing so we will constrain the metal and dust enrichment of galaxies in the early Universe.
 
-\subsubsection*{\bf Stellar populations}\label{sec:properties}
+\vspace{2mm}
+\noindent
+\textbf{Stellar populations} - In addition to $\beta$, PUPPIES will also obtain F444W photometry, probing beyond the Balmer-break at $9<z<11$. When combined with a measure of the UV continuum slope $\beta$ this enables - see technical justification - us to measure stellar masses, and thus constrain the galaxy stellar mass function and stellar mass - specific star formation rate relation. With PUPPIES we will measure the galaxy stellar mass function at $z>9$, and where ancillary optical observations are available, at $z<9$. The stellar mass function and specific star formation rate - stellar mass relation provide an additional constraint on the processes responsible for the early formation of galaxies. For example, discovery of objects with suppressed, or quenched, star formation in the early Universe may point to stronger stochastic feedback than currently implemented in models.  
 
-In addition to $\beta$, PUPPIES will also obtain F444W photometry, probing beyond the Balmer-break at $9<z<11$. This is essential - see technical justification - to measure stellar masses, and thus constrain the galaxy stellar mass function and stellar mass - specific star formation rate relation. With PUPPIES we will measure the galaxy stellar mass function at $z>9$, and where ancillary optical observations are available, at $z<9$. 
+\vspace{2mm}
+\noindent
+\textbf{Resolved Structures} - The resolved structures of galaxies encode information about their structural properties and formation histories which can be compared to galaxy formation models.  However we know very little concerning the properties of $z > 9$ galaxies, and even basic information like sizes would be revealing  useful physical information.     Structure can also be used in the statistical measurement of the luminosity function, for completeness simulations, and only by simultaneously modelling the structures, redshifts, and fluxes is it possible to self-consistently measure the luminosity function and its uncertainties.   As can be seen in Fig. \ref{fig:sizes} we will be able to determine structural properties of many galaxies.
 
+\begin{wrapfigure}{r}{0.6\textwidth}
+\vspace{-5mm}
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{figs/morph.png}
+  \end{center}
+  \vspace{-5mm}
+  \caption{Current observation constraints and theoretical predictions for the sizes of galaxies at $z>9$. \textbf{Even in under-sampled imaging many $z>9$ galaxies are expected to be resolved in the NIRCam imaging.}}
+   \label{fig:sizes}
+\end{wrapfigure}
 
-\subsubsection{\bf Resolved Structures}
+We know that massive galaxies at $z < 6$ are often very compact and evolve into red nuggets that have extinguished their star formation a few Gyr after the big bang.  What we do not know is how this occurred.  These quenched ‘red nuggets’ are up to five times smaller at $z\sim3-6$ than galaxies of the same mass today.  Since these are certainly the progenitors of modern massive galaxies, studying the ancestors of these compact passive/red galaxies at even higher redshifts is crucial for deciphering their origin.   PUPPIES will answer how these early galaxies first formed -- were they large star forming systems that later become compact through some process (e.g., \citealt{Barro2013,Tacchella2016})? Or, did they form as compact systems to begin with (e.g., \citealt{Lilly2016})?   
 
-The resolved structures of galaxies encodes information about their structural properties and formation histories and are key observables that can be compared to galaxy formation models.  However we know next to nothing about these properties of $z > 9$ galaxies even though this type of analysis has proven very beneficial at lower redshifts (e.g., Mortlock et al. 2013).  Morphologies are also an important assumption used in the measurement of the luminosity function (reference) and only by simultaneously modelling the morphologies, redshifts, and fluxes is it possible to self-consistently measure the luminosity function and its uncertainties. Leveraging NIRCam's resolution we will provide sizes and morphologies of $9<z<11$ galaxies across the rest-frame UV ($0.1-0.4\mu$m).  As can be seen in Fig. \ref{fig:sizes} we will be able to determine structural properties of many galaxies.
+%Because our parallel imaging will find the most massive systems, and therefore the progenitors of these passive galaxies, we can answer this question by measuring the sizes of these galaxies.
 
-\begin{SCfigure}[][!h]
-    \includegraphics[width=0.6\textwidth]{figs/morph.png}
-      \caption{\protect\rule{0ex}{10ex} Current observation constraints and theoretical predictions for the sizes of galaxies at $z>9$. \textbf{Even in under-sampled imaging many $z>9$ galaxies are expected to be resolved in the NIRCam imaging.}}
-      \label{fig:sizes}
-\end{SCfigure}
-
-
-What we do know is that massive galaxies at $z < 6$ are often very compact and evolve into red nuggets that have extinguished their star formation a few Gyr after the big bang.  What we do not know is how this occurred.  This is such that these quenched passive ‘red nuggets’ are up to five times smaller at z~3-6 than galaxies of the same mass today.  Since these are certainly the progenitors of modern massive galaxies, studying the ancestors of these compact passive/red galaxies at even higher redshifts is crucial for deciphering their origin.   What we can answer this PUPPIES data is how these early galaxies first formed -- were they large star forming systems that later become compact through some process (Barro et al. 2013; Tacchella et al. 2016)? Or, did these systems formed as compact systems to begin with (e.g., Lilly & Carollo 2016)?   Because our parallel imaging will find the most massive systems, and therefore the progenitors of these passive galaxies, we can answer this question by measuring the sizes of these galaxies.
-
-Related to this is that it is clear that merging activity is very important for distant galaxies up to $z \sim 6$ and likely is even more important at higher redshifts.  The evolution of the density of matter at these early phases of the universe goes as $\sim (1+z)^{3}$, implying that galaxies at $z > 9$ were in a more denser universe than at later times. This implies that the merger rate should be even higher than what we can measure at $z < 6$ with HST.  Duncan et al. (2019) showed that $\sim 40$\% of massive galaxies at $z \sim 6$ are in pairs, with an inferred merger rate of $\sim 10$ mergers Gyr$^{-1}$.  In hierarchical models of galaxy formation these galaxies should be undergone intense merging, which is something that we are directly detect. It is ideal to test this with massive systems which are the easiest observational to find mergers for, given that the secondary system in a pair can be over a magnitude fainter for major mergers.  If we extrapolate the merger fraction history that we can measure at $z > 6$ we find that there should be over 60\% of galaxies in pairs.  This is also a prediction of models such as Illustris and Eagle, which we can test at this high density region of the early universe.  Given that we will detect XX galaxies, our shot noise will produce a merger fraction which is less than 10\% on this measurement.  
-
-
-
-
-\subsection{\bf \underline{Legacy science}}
-
-With a pure parallel project such as this, there are many additional science topics that can be addressed.  This includes, but is not limited to, faint late-type stars, quiescent galaxies at lower redshifts, and the morphologies of field galaxies.  Some of these goals would require deep observed optical imaging, but many of them can be done just with the JWST imaging that we will acquire.
-
-One of the primary legacy science topics that can be done with PUPPIES using just JWST data is to search for low-mass stars and sub-stellar objects (MLTY spectra type).  These stars are not only identifiable in the near-IR but are ubiquitous in imaging observations.  Their distribution across the Galaxy is unknown and thus probes such as ours which will locate these stars are ideal for studying these objects as well as their density and distributions. There are currently good statistics in the immediate Solar neighbourhood for stars such as these, they are largely unexplored beyond. Because our observations will probe both the distinct absorption features of later type stars, and the Rayleigh-Jeans slope of their spectra,  PUPPIES will provide an unambiguous type and sub-type for these objects. With multiple independent sight lines, PUPPIES will break the local density/scale-height and scale-length degeneracy of local measurements using these stars.
+It is clear that merging activity is very important for distant galaxies up to $z \sim 6$ and likely is even more important at higher redshifts.  The evolution of the density of matter at these early phases of the universe goes as $\sim (1+z)^{3}$, such that galaxies at $z > 9$ were in a more dense universe than at later times.  \citet{Duncan2019} showed that $\sim 40$\% of massive galaxies at $z \sim 6$ are in pairs, with an inferred merger rate of $\sim 10$ mergers Gyr$^{-1}$.  In hierarchical models of galaxy formation these galaxies should have undergone intense merging, which is something that we directly detect. It is ideal to test this with massive systems, which would be the easiest to find observational signatures of mergers in, given that the secondary system in a pair can be over a magnitude fainter.  If we extrapolate the merger fraction history that we can measure at $z > 6$ we find that there should be over 60\% of galaxies in pairs at $z > 9$.  This is also a prediction of models such as Illustris and Eagle, which we can test at this high density region of the early universe.  Given that we will detect $\sim 100$ galaxies, our shot noise will produce a merger fraction which is less than 10\% on this measurement.  
 
 
-%{\bf could add quiescent galaxies at $z>3$ here}
-
-%{\bf -- similar to WAFLS --}
-
-%{\bf faint late-type stars}
 
 
-%{\bf faint lower redshift galaxies -- photo-z, physical properties, morphologies}
+\subsection*{\bf \underline{Legacy science}}
 
-%{\bf follow-up studies}
+With a pure parallel project such as this, there are many additional science topics that can be addressed.  This includes, but is not limited to, faint low-mass stars and sub-stellar objects, quiescent galaxies at lower redshifts, and the morphologies of field galaxies. Some of these goals would require spectroscopy or deep observed optical imaging, but many of them can be achieved just with the \emph{Webb} imaging that we will acquire.
 
+\vspace{2mm}
+\noindent
+\textbf{Low-mass stars and sub-stellar objects} One of the primary legacy science topics that can be done with PUPPIES using just \emph{Webb} data is to search for low-mass stars and sub-stellar objects (MLTY spectra type). These stars are not only identifiable in the near-IR but are ubiquitous in imaging observations.  Their distribution across the Galaxy is unknown and thus probes such as ours which will locate these stars are ideal for studying these objects as well as their density and distributions. There are currently good statistics in the immediate Solar neighbourhood for stars such as these, they are largely unexplored beyond. Because our observations will probe both the distinct absorption features of later type stars, and the Rayleigh-Jeans slope of their spectra,  PUPPIES will provide an unambiguous type and sub-type for these objects. With multiple independent sight lines, PUPPIES will break the local density/scale-height and scale-length degeneracy of local measurements using these stars.
 
-The deep near-IR JWST imaging from PUPPIES will provide an excellent foundation for future spectroscopic studies with the NIRSpec MOS, or NIRCam/NIRISS WFSS.   The PUPPIES data will provide a high source density that will make efficient use of these MOS instruments.   It is likely that we will find rarer and more massive systems than the GTOs, which will facilitate The efficient near-IR spectroscopy enabled by PUPPIES will not only provide precise redshifts but also provide multi-line metallicities of galaxies at $z=1-4$ down to $M_{*}=10^{8}\ {\rm M_{\odot}}$ and H$\alpha$ based star formation rates. 
+\vspace{2mm}
+\noindent
+\textbf{A coherent picture of galaxy assembly across cosmic history} The deep near-IR JWST imaging from PUPPIES will provide an excellent foundation for future spectroscopic studies with the NIRSpec MOS, or NIRCam/NIRISS WFSS. The PUPPIES data will provide a high source density that will make efficient use of these MOS instruments. The efficient near-IR spectroscopy enabled by PUPPIES will not only provide precise redshifts but also provide multi-line metallicities of galaxies at $z=1-4$ down to $M_{*}=10^{8}\ {\rm M_{\odot}}$ and H$\alpha$ based star formation rates. 
 
 
 
@@ -235,51 +206,52 @@ The deep near-IR JWST imaging from PUPPIES will provide an excellent foundation 
 
 In this section we justify our choices of survey parameters including the choice of filters, depth, and area, and assess the potential available pure parallel observing opportunities.
 
-\vspace{5mm}
+\vspace{2mm}
 \noindent
-\underline{\bf Filter choice: photometric redshifts -- } Simulations show that the combination of 3 filter pairs: {\bf F115W}, {\bf F150W}, {\bf F200W}, {\bf F277W}, {\bf F356W}, and {\bf F444W} is the optimum choice for \emph{robustly} identifying $z>9$ star forming galaxies. As shown in Fig. \ref{fig:s_f} a simple pair of flux-ratios (or color-colour) selection can be used to identify $9<z<11$ galaxies with high completeness and low-contamination. One disadvantage of this approach however is relatively large scatter in the redshifts of individual galaxies resulting in large uncertainties on individual luminosities. A 3-pair photometric redshift selection yield smaller uncertainties on the redshifts and luminosities of individual galaxies and further serves to reduce contamination to $<5\%$.
+\underline{\bf Filter choice: photometric redshifts -- } High-redshift star forming galaxies can be identified by taking advantage of the strong Lyman-limit/$\alpha$ break combined with the relatively flat continuum beyond. This technique - the Lyman break technique - has been applied numerous times over the last 25 years to successfully identify star forming galaxies to $z\sim 10$. In the simplest implementation of this technique high-redshift galaxies can be isolated in colour (or flux-ratio) space as demonstrated in Fig. \ref{fig:s_f}: the strong break manifests as a very red colour (or small flux ratio) while the continuum has a colour $\sim 1$ (or flux ratio close to unity). The analysis presented in \ref{fig:s_f}, based on synthetic observations from \citet{2018MNRAS.478.1694M}, demonstrated that just 3-bands ({\bf F115W}, {\bf F150W}, and {\bf F277W}) can be used to efficiently identify $z>9$ galaxies with relatively low contamination. However, one disadvantage of this approach is the relatively large scatter $\Delta z/(1+z)>0.1$ in the redshifts of individual galaxies resulting in large  uncertainties on individual luminosities. By adding three additional filters ({\bf F200W}, {\bf F356W}, and {\bf F444W}) it is possible to not only determine much more precise redshifts ($\Delta z/(1+z)<0.05$) but also reduce the contamination rate to $<5\%$. 
 
 \begin{SCfigure}[][!h]
     \includegraphics[width=0.6\textwidth]{figs/s_f_F115W.png}
-      \caption{\protect\rule{0ex}{10ex} The flux analogue of a colour-colour selection for $9<z<11$ galaxies. Using a mock catalogue from \citet{} combined with photometric noise consistent with our middle tier we demonstrate that a simple pair of flux ratios (or colours) can be used to efficiently select galaxies at $9<z<11$ with contamination $\sim 10\%$ and high-completeness. Sources are only included if they are detected in F277W$>7\sigma$.}
+      \caption{\protect\rule{0ex}{10ex} The flux analogue of a colour-colour selection for $9<z<11$ galaxies. Using a mock catalogue from \citet{2018MNRAS.478.1694M} combined with photometric noise consistent with our middle tier we demonstrate that a simple pair of flux ratios (or colours) can be used to efficiently select galaxies at $9<z<11$ with contamination $\sim 10\%$ and high-completeness. Sources are only included if they are detected in F277W$>7\sigma$.}
       \label{fig:s_f}
 \end{SCfigure}
-
-\noindent
-\underline{\bf Filter choice: physical properties -- } Constraining the chemical and dust enrichment of galaxies at $9<z<11$ requires that we probe the rest-frame UV continuum with at least a single colour, and ideally with several bands providing a consistent measurement of the same wavelength range across several redshifts. As demonstrated in Fig. \ref{fig:SED} a 6-band strategy is ideal in this respect as it allows the UV continuum to probed with 3 bands uncontaminated by the Lyman-$\alpha$ and Balmer breaks, encompassing the entire rest-frame UV, across our entire target redshift range. A 4-band strategy allows the measurement of the slope albeit with only a pair of filters uncontaminated by the break.
-
-\vspace{5mm}
-\noindent
-\underline{\bf Filter choice: alternative strategies -- } While we note that 3 filter pair strategy best matches our scientific objectives these can be partially met using a 2-pair strategy. To keep PUPPIES as flexible as possible in this respect we can also make use of opportunities better suited to a 2-pair strategy.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.3\textwidth]{figs/SED_9.pdf}
     \includegraphics[width=0.3\textwidth]{figs/SED_10.pdf}
     \includegraphics[width=0.3\textwidth]{figs/SED_11.pdf}
-    \caption{The model spectral energy distribution and NIRCam fluxes of a star forming galaxy at $z=9$, $10$, and $11$. The shaded area denotes the rest-frame UV continuum between the Lyman-$\alpha$ and Balmer breaks. The alternative 4-band strategy is denoted by the filled symbols. \textbf{The 6-band PUPPIES strategy allows the consistent measurement of the UV continuum slope across the entire UV continuum and redshift range. An alternative 4-band strategy allows the measurement of the slope albeit with a pair of filters uncontaminated by the break. The 6-band strategy also allows us to measure a single band beyond the Balmer-break, essential for measuring stellar masses.}}
+    \caption{The model spectral energy distribution and 6-band NIRCam fluxes of a star forming galaxy at $z=9$, $10$, and $11$. The shaded area denotes the rest-frame UV continuum between the Lyman-$\alpha$ and Balmer breaks. The alternative 4-band strategy is denoted by the filled symbols. \textbf{The 6-band PUPPIES strategy allows the consistent measurement of the UV continuum slope across the entire UV continuum and redshift range. An alternative 4-band strategy allows the measurement of the slope albeit only with a single pair of filters. The 6-band strategy additionally allows us to measure a single band beyond the Balmer-break, essential for measuring stellar masses.}}
     \label{fig:SED}
 \end{figure}
 
-The strength of the rest-frame UV - optical colour is a well established diagnostic of the recent star formation activity in galaxies. However, the colour is also sensitive to dust attenuation and thus, in the absence of additional constraints, the UV - optical colour is degenerate. However, the UV continuum slope $\beta$ is a well established diagnostic of dust attenuation: redder galaxies are generally dustier. Combining these two diagnostics then allows us to constrain both the dust attenuation and the specific star formation rate. This is demonstrated in  Fig. \ref{fig:beta} where simulation galaxies, from the FLARES project \citep{2020MNRAS.tmp.3168L}, are shown in the $\beta$ and F356W-F444W plane and colour coded by $A_{1500}$ (left) and specific star formation rate (right). At fixed $\beta$ F356W-F444W is correlated with specific star formation rate. For fields observed with our 6-band strategy PUPPIES will enable the measurement of the stellar masses and specific star formation rates.
+\noindent
+\underline{\bf Filter choice: physical properties -- } Constraining the chemical and dust enrichment of galaxies at $9<z<11$ requires that we probe the rest-frame UV continuum with at least a single colour, and ideally with several bands providing a consistent measurement of the same wavelength range across several redshifts. As demonstrated in Fig. \ref{fig:SED} a 3-pair strategy is ideal in this respect as it allows the UV continuum to probed with 3 bands uncontaminated by the Lyman-$\alpha$ and Balmer breaks, encompassing the entire rest-frame UV, across our entire target redshift range. A 2-pair strategy allows the measurement of the slope albeit with only a pair of filters uncontaminated by the breaks. 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.45\textwidth]{figs/beta_A1500.pdf}
     \includegraphics[width=0.45\textwidth]{figs/beta_sSFR.pdf}
     % \includegraphics[width=0.3\textwidth]{figs/C_beta_MTOL.pdf}
-    \caption{The relationship between $\beta$ and F356W-F444W for simulated galaxies at $z=10$ colour-coded by $A_{1500}$ (\emph{\underline{left}}) and specific star formation rate (\emph{\underline{right}}) predicted by the FLARES simulation (Lovell+2020; Vijayan+2020). At these redshifts $\beta$ is strongly correlated with dust attenuation while at fixed $\beta$ the specific SFR is correlated with F356W$-$F444W. \textbf{The 6 filter observations obtained by PUPPIES will enable us to measure the dust attenuation, total star formation rates, and stellar masses of galaxies at $z>8$.}}
+    \caption{The relationship between $\beta$ and F356W-F444W for simulated galaxies at $z=10$ colour-coded by $A_{1500}$ (\emph{\underline{left}}) and specific star formation rate (\emph{\underline{right}}) predicted by the FLARES simulation (\citealt{2020MNRAS.tmp.3168L, Vijayan2020}). At these redshifts $\beta$ is strongly correlated with dust attenuation while at fixed $\beta$ the specific SFR is correlated with F356W$-$F444W. \textbf{The 6 filter observations obtained by PUPPIES will enable us to measure the dust attenuation, total star formation rates, and stellar masses of galaxies at $z>8$.}}
     \label{fig:beta}
 \end{figure}
 
-\vspace{5mm}
-\noindent
-\underline{\bf Area and Depth - } In the absence of cosmic variance, the core science objective of PUPPIES - to constrain the faint-end slope and normalisation of the $9<z<11$ - is best realised by going as deep as possible. This is both because the expected number of galaxies increases faster than $f_{\nu}^2$ due to the steepness of the luminosity function and going deeper extends the luminosity range. Going deeper also provides stronger complementarity with the public $\sim 90\ {\rm arcmin}^2$ CEERS NIRCam imaging. However, a single, or small number of fields, is susceptible to cosmic-variance, which will dominate over the statistical (Poisson) variance \citep[e.g][]{2020MNRAS.499.2401T}. From our analysis, based on the methodology of \citet{2020MNRAS.499.2401T}, a good compromise is afforded by combining $10-20$ pointings with durations $10^4-10^5$s long. 
+The strength of the Balmer break, often measured with a broadband colour, is a well established diagnostic of the recent star formation activity in galaxies. However, the broadband break colour is also sensitive to dust attenuation and thus, in the absence of additional constraints, the observed colour is degenerate. However, the UV continuum slope $\beta$ is a well established diagnostic of dust attenuation: redder galaxies are generally dustier. Combining these two diagnostics then allows us to constrain both the dust attenuation and the specific star formation rate. This is demonstrated in  Fig. \ref{fig:beta} where simulated galaxies, from the FLARES project \citep{2020MNRAS.tmp.3168L}, are shown in the $\beta$ and F356W-F444W plane and colour coded by $A_{1500}$ (left) and specific star formation rate (right). At fixed $\beta$ F356W-F444W is correlated with specific star formation rate. Measuring both $\beta$ and F356W-F444W then allows us to constrain the specific star formation rate and stellar mass. A 3-pair strategy allows us to include {\bf F444W} providing access to the spectrum beyond the Balmer break.
 
-\vspace{5mm}
+\vspace{2mm}
+\noindent
+\underline{\bf Filter choice: alternative strategies -- } While a 3 filter pair strategy best matches our full scientific objectives, our core objective - meaningful constraints on the faint-end of the luminosity function - can be achieved with a 2-pair strategy. To allow PUPPIES to efficiently use the maximum number of opportunities, while still fulfilling our core objective, we can also make use of opportunities better suited to a 2-pair strategy.
+
+\vspace{2mm}
+\noindent
+\underline{\bf Area and Depth - } In the absence of cosmic variance, the core science objective of PUPPIES - to constrain the faint-end slope and normalisation of the $9<z<11$ UV luminosity function - is best realised by going as deep as possible. This is both because the expected number of galaxies increases faster than $f_{\nu}^2$ due to the steepness of the luminosity function and going deeper extends the luminosity range. Going deeper also provides stronger complementarity with the public $\sim 90\ {\rm arcmin}^2$ CEERS NIRCam imaging. However, a single, or small number of fields, is susceptible to cosmic-variance, which will dominate over the statistical (Poisson) variance \citep[e.g.,][]{2020MNRAS.499.2401T}. From our analysis, based on the methodology of \citet{2020MNRAS.499.2401T}, a good compromise is afforded by combining $10-20$ pointings with durations $10^4-10^5$s long yielding depths of F200W=$29-30$. This provides an area comparable to CEERS (and thereby doubling the available public imaging) but will reach up-to $1$ magnitude deeper.
+
+
+\vspace{2mm}
 \noindent
 \underline{\bf Availability of deep NIRCam parallel opportunities - }
-To determine the type, and thus potential depth, of opportunities that are available we use the public GTO and ERS APTs and filter out all observations that 1) already have attached coordinated parallels, 2) have the \texttt{NoParallel} flag set, and 3) those of targets with high-background ($>0.3\ {\rm MJy/Sr}$). To estimate the amount of time available to teach unique target we sum the science durations of all observations using the same instrument. The predicted distribution of opportunities with science durations $t_{\rm SD}>10^{4}$ s is then shown in Figure \ref{fig:time_background}: this analysis suggests $\sim 50$ GTO/ERS opportunities with $t_{\rm SD}>10^{4}$ s; assuming this distribution is representative of the final Cycle 1 observation suggests there should be $100-150$ useful opportunities.
+To determine the type, and thus potential depth, of opportunities that are available we use the public GTO and ERS APTs and filter out all observations that 1) already have attached coordinated parallels, 2) have the \texttt{NoParallel} flag set, and 3) are targets with high-background ($>0.3\ {\rm MJy/Sr}$). To estimate the amount of time available to each unique target we sum the science durations of all observations using the same instrument. The predicted distribution of opportunities with science durations $t_{\rm SD}>10^{4}$ s is then shown in Figure \ref{fig:time_background}: this analysis suggests $\sim 50$ GTO/ERS opportunities with $t_{\rm SD}>10^{4}$ s; assuming this distribution is representative of the final Cycle 1 observations suggests there should be $100-150$ useful opportunities.
 
 \begin{SCfigure}
     \includegraphics[width=0.6\textwidth]{figs/time_background.pdf}
@@ -287,9 +259,9 @@ To determine the type, and thus potential depth, of opportunities that are avail
       \label{fig:time_background}
 \end{SCfigure}
 
-\vspace{5mm}
+\vspace{2mm}
 \noindent
-\underline{\bf Fiducial programme:} Armed with this knowledge of the predicted number and distribution of available parallel opportunities we define a fiducial programme consisting of three tiers - ABC - assuming 4, 3, and 2 \texttt{deep8} 10 group exposures respectively. Reflecting the greater availability of shorter duration opportunities we choose, for this fiducial programme, to obtain 3, 5, and 10 pointings for the A, B, and C tiers respectively. The resulting area and depths achieved in each tier are summarised below. \textbf{The total exposure time as reported by the APT for the combination of the 3 tiers is 79.3 hours}. This fiducial programme serves only to demonstrate what should be possible with a PUPPIES-\emph{like} programme and not a firm requirement.
+\underline{\bf Fiducial programme:} Armed with this knowledge of the predicted number and distribution of available parallel opportunities we define a fiducial programme consisting of three tiers - ABC - assuming 4, 3, and 2 \texttt{deep8} 10 group exposures respectively. Reflecting the greater availability of shorter duration opportunities we choose, for this fiducial programme, to obtain 3, 5, and 10 pointings for the A, B, and C tiers respectively. The resulting area and depths achieved in each tier are summarised below. Our shallowest tier (C) covers an area similar to CEERS but is $\sim 0.2$ mag deeper (in F200W) - see Fig. \ref{fig:F200W}. \textbf{The total exposure time as reported by the APT for the combination of the 3 tiers is 79.3 hours}. This fiducial programme serves only to demonstrate what should be possible with a PUPPIES-\emph{like} programme and not a firm requirement.
 
 \begin{table}[h!]
 \footnotesize
@@ -310,10 +282,31 @@ Tier & $N_{p}$ & Area$/{\rm arcmin^2}$ & F115W & F150W & F200W & F277W & F356W &
 \caption{The number of pointings $N_p$, area, and 5$\sigma$ point source depths in each filter for our 3 tiers for our fiducial survey.  Depths assume a short-wavelength (long-wavelength) apertures of $0.08$" ($0.16$"), background at the benchmark level of the \texttt{Minzodi} location as defined by \texttt{Pandeia}. The ABC tiers assume 4, 3, 2 exposures of 10 groups assuming the \texttt{DEEP8} readout mode respectively.}
 \end{table}
 
-\vspace{5mm}
+\begin{SCfigure}[][!h]
+    \includegraphics[width=0.45\textwidth]{figs/F200W.pdf}
+  \caption{\protect\rule{0ex}{10ex} The cumulative area probed by the fiducial PUPPIES program, JADES, and CEERS, as a function of the F200W depth. \textbf{PUPPIES will more than double the area of public deep NIRCam imaging while also pushing $0.2-0.6$ mag deeper.}}
+  \vspace{-5mm}
+  \label{fig:F200W}
+\end{SCfigure}
+
+
+
+
+\vspace{2mm}
 \noindent
-\underline{\bf Preferred distribution and flexibility - } While 
-This fiducial programme defined above serves only to demonstrate what should be possible with a PUPPIES-\emph{like} programme and not a firm requirement. Within the confines of our requirement for 10-20 deep (F200W$>29$), low-background, independent pointings we are flexible in our choice observing opportunities. We will however seek to obtain a balanced programme mixing deeper and shallower opportunities. Where possible we will also express a preference for targets with meaningful existing ancillary observations and accessible to the Southern Hemisphere.
+\underline{\bf Preferred distribution and flexibility - } The fiducial programme defined above serves only to demonstrate what should be possible with a PUPPIES-\emph{like} programme and is not a firm requirement. Within the confines of our requirement for 10-20 deep (F200W$>29$), low-background, independent pointings we are flexible in our choice of observing opportunities. We will however seek to obtain a balanced programme mixing deeper and shallower opportunities. Where possible we will also express a preference for targets with meaningful existing observations and ones that are accessible to the Southern Hemisphere.
+
+\vspace{2mm}
+\noindent
+\underline{\bf Treasury Data Plan - } While focused on the distant Universe the PUPPIES data-set will have tremendous legacy value to the community allowing multiple scientific questions in both galactic and extragalactic astronomy to be answered. To facilitate the exploitation of PUPPIES we will release several high-level data products including reduced images, photometry catalogues, and catalogues containing redshifts and physical properties derived from SED fitting. We will also make many of our analysis scripts publicly available. 
+Depending on scheduling some of PUPPIES observations may be available before the cycle 2 call deadline. Where this is the case we will endeavour to release at least basic data-products as soon as possible to enable members of the community to utilise these for cycle 2 proposals. For example, many of the fields would be excellent sources of targets for NIRSpec MOS.
+
+
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -330,6 +323,7 @@ This fiducial programme defined above serves only to demonstrate what should be 
 %        (see https://jwst-docs.stsci.edu/jwst-opportunities-and-policies/jwst-call-for-proposals-for-cycle-1/jwst-cycle-1-proposal-preparation)
 %
 %
+\vspace{-5mm}
 \coordinatedobs % Do not delete this command.
 % Enter your coordinated parallel observing plans here, if any.
 
@@ -339,6 +333,7 @@ This fiducial programme defined above serves only to demonstrate what should be 
 %        (see https://jwst-docs.stsci.edu/jwst-opportunities-and-policies/jwst-call-for-proposals-for-cycle-1/jwst-cycle-1-proposal-preparation)
 %
 %
+\vspace{-5mm}
 \duplications           % Do not delete this command.
 % Enter your duplication justifications here, if any.
 
@@ -348,6 +343,7 @@ This fiducial programme defined above serves only to demonstrate what should be 
 %       (see https://jwst-docs.stsci.edu/jwst-opportunities-and-policies/jwst-call-for-proposals-for-cycle-1/jwst-cycle-1-proposal-preparation)
 %
 %
+\vspace{-5mm}
 \analysisplan % Do not delete this command.
 % Describe the data processing and analysis plan here.
 
