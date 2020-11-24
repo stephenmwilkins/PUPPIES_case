@@ -1,0 +1,9 @@
+PUPPIES is led by Christopher Conselice (CoPI), Aprajita Verma (CoPI), and Stephen Wilkins (PI) supported by an international team including scientists across all career levels.
+
+- Chrisopher Conselice (CoPI) is an expert at the study of galaxy evolution especially the evolution of massive galaxies.  He is also an expert at morphological and structural analyses of distant galaxies from Hubble Space Telescope data.
+
+- Aprajita Verma (CoPI) is an expert in galaxy evolution and formation studies, including both survey science and detailed properties of galaxies from the local to the early Universe. She has a strong background in optical-to-mm astronomy, and particularly in the infrared where she has experience from the ground and various space-based facilities. She is heavily involved with the UK's ELT instrumentation programme and the Vera C. Rubin Observatory where she has been co-chair of the Strong Lensing Science Collaboration for the last 4 years.
+
+- Stephen Wilkins (PI) utilises both observation and theory to understand the distant Universe and validate galaxy formation models. He currently leads a large simulation project - the First Light and Reionisation Epoch Simulations - and is a member of the Virgo Consortium for cosmological simulations which ran the highly successful EAGLE project. He previously worked extensively with Hubble/WFC3 observations.
+
+The wider team includes a broad range of experience including both observations and theory/modelling covering **all** of the proposed science objectives. Many CoIs have gained experience with Webb through participation in CEERS and the GTO project led by Rogier Windhorst. Many CoIs are members of CANDELS and other other large Hubble projects.

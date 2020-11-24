@@ -1,0 +1,1 @@
+We propose a pure parallel survey to obtain deep (F200W=29-30) multi-band NIRCam imaging over around 10-20 pointings . We will observe each target with either 4 (F115W/F150W/F277W/F356W) or 6 (+F200W/F444W) bands. 
